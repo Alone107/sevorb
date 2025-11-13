@@ -1,0 +1,186 @@
+.sliderSection {
+  padding-top: 90px;
+  position: relative;
+  padding-bottom: 205px;
+}
+
+.sliderSection-title {
+  margin-top: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 125%;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.sliderSection-text {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 125%;
+  letter-spacing: -0.02em;
+  color: #fff;
+  margin-bottom: 64px;
+  max-width: 980px;
+  display: block;
+}
+
+.slide-case {
+  padding: 40px;
+  border-radius: 16px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.tags {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.tags a {
+  font-family: var(--second-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 143%;
+  text-align: center;
+  color: var(--accent);
+  text-decoration: none;
+  padding: 4px 12px;
+  border-radius: 16px;
+  background: #fff;
+}
+
+.slide-case h3 {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 125%;
+  margin-bottom: 24px;
+}
+
+.slide-case p {
+  display: block;
+  line-height: 150%;
+  color: var(--subtext);
+  margin-bottom: 72px;
+}
+
+.slide-case-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: center;
+}
+
+.case-name-company {
+  position: relative;
+  padding-left: 17px;
+  font-family: var(--second-family);
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 125%;
+  color: #fff;
+  margin-bottom: 9px;
+  border-left: 1px solid #33c8c3;
+}
+
+.case-row-block p {
+  font-family: var(--second-family);
+  font-size: 14px;
+  line-height: 150%;
+  color: #fff;
+  opacity: 0.6;
+  margin-bottom: 0;
+}
+
+.swiper-case {
+  overflow: visible;
+  margin-bottom: 48px;
+}
+
+.swiper-button-custom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border: 1px solid var(--text);
+  border-radius: 1000px;
+  background: transparent;
+  cursor: pointer;
+  transition-duration: var(--transition);
+}
+
+.swiper-button-custom path {
+  transition-duration: var(--transition);
+}
+
+.swiper-button-custom:hover {
+  border-color: var(--backgrond);
+  background: #a0a7ba;
+}
+
+.swiper-button-custom:hover path {
+  stroke: #0a1d2a;
+}
+
+.swiper-button-case-prev,
+.swiper-button-case-next {
+  position: relative;
+  top: auto;
+  left: auto;
+}
+
+.slider-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slider-arrows {
+  display: flex;
+  gap: 12px;
+}
+
+.shadow-slide {
+  position: absolute;
+  background: rgba(10, 29, 42, 0.7);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.swiper-slide-active .shadow-slide {
+  background: linear-gradient(6deg, #0a1d2a 0%, rgba(10, 29, 42, 0) 100%);
+  opacity: 0.8;
+}
+
+.sliderSection .bg-circle-red {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 968px;
+  max-height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.sliderSection .bg-circle-white {
+  position: absolute;
+  bottom: -100px;
+  right: 0;
+  max-width: 687px;
+  max-height: 687px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.wrap-slider {
+  overflow: hidden;
+}

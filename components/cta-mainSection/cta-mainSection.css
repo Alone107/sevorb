@@ -1,0 +1,420 @@
+.cruise-main {
+  display: flex;
+  flex-direction: column;
+  gap: 140px;
+  background: #fff;
+  z-index: 2;
+  position: relative;
+}
+
+.hero-cruise {
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 15vw;
+}
+
+.hero-cruise-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 100%;
+  pointer-events: none;
+  height: 100%;
+  max-height: 100%;
+}
+
+.hero-cruise-bg img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+  position: relative;
+  max-width: 100%;
+  height: 100%;
+}
+
+.hero-title {
+  max-width: 58%;
+}
+
+.hero-title h1 {
+  font-weight: 400;
+  font-size: clamp(1.3125rem, 0.6625rem + 3.25vw, 4.5625rem);
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 48px;
+}
+
+.hero-title p {
+  font-weight: 400;
+  font-size: clamp(0.75rem, 0.425rem + 1.625vw, 2.375rem);
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.hero-blocks {
+  margin-top: 64px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 50%;
+  width: 100%;
+  margin-left: auto;
+  gap: 30px;
+}
+
+.hero-block {
+  border-radius: 24px;
+  -webkit-backdrop-filter: blur(6.435418129px);
+          backdrop-filter: blur(6.435418129px);
+  background: rgba(105, 168, 195, 0.5);
+  max-width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  font-weight: 400;
+  font-size: clamp(0.625rem, 0.5rem + 0.625vw, 1.25rem);
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  min-height: 86px;
+}
+
+.hero-btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 60px;
+  position: absolute;
+  bottom: -6%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 100%;
+  margin-top: 50%;
+}
+
+.hero-call-whatsap {
+  border-radius: 66px;
+  background: linear-gradient(345deg, #20a200 0%, #42ff89 100%);
+  box-shadow: inset 0 12px 12px 0 rgba(255, 255, 255, 0.25);
+  font-weight: 600;
+  font-size: clamp(0.5rem, 0.35rem + 0.75vw, 1.25rem);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #303030;
+  max-width: 386px;
+  width: 100%;
+  padding: 40px 10px;
+  display: block;
+  transition: all 0.5s;
+}
+
+.hero-call-whatsap:hover {
+  color: #fff;
+}
+
+.hero-button-zayavka {
+  border-radius: 66px;
+  background: linear-gradient(345deg, #20a200 0%, #42ff89 100%);
+  box-shadow: inset 0 12px 12px 0 rgba(255, 255, 255, 0.25);
+  font-weight: 600;
+  font-size: clamp(0.5rem, 0.35rem + 0.75vw, 1.25rem);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #303030;
+  max-width: 386px;
+  width: 100%;
+  padding: 40px 10px;
+  display: block;
+  outline: none;
+  border: none;
+  transition: all 0.5s;
+}
+
+.hero-button-zayavka:hover {
+  color: #fff;
+}
+
+.promotions-cruise h2 {
+  font-weight: 400;
+  font-size: clamp(1.25rem, 0.7375rem + 2.5625vw, 3.8125rem);
+  text-transform: uppercase;
+  text-align: center;
+  color: #01c0da;
+  margin-bottom: 80px;
+}
+
+.promotions-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  row-gap: 60px;
+}
+
+.promotions-item {
+  max-width: 210px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.promotions-item-img {
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 8px;
+}
+
+.promotions-item-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.promotions-item-text {
+  font-weight: 400;
+  font-size: clamp(0.6875rem, 0.6rem + 0.4375vw, 1.125rem);
+  text-transform: uppercase;
+  text-align: center;
+  color: #0af;
+  border-radius: 27px;
+  background: rgba(209, 214, 212, 0.5);
+  padding: 10px 8px;
+  width: 100%;
+}
+
+.banner-cruise {
+  display: flex;
+  gap: 20px;
+  background: #cde4f5;
+}
+
+.banner-cruise-info {
+  padding: 30px 10px 30px 35px;
+}
+
+.banner-cruise-info h3 {
+  font-weight: 400;
+  font-size: clamp(0.5625rem, 0.2rem + 1.8125vw, 2.375rem);
+  text-transform: uppercase;
+  color: #017add;
+  margin-bottom: 25px;
+}
+
+.banner-cruise-link {
+  border-radius: 49px;
+  background: linear-gradient(345deg, #fee3c8 0%, #ffba74 100%);
+  box-shadow: inset 0 9px 9px 0 rgba(255, 255, 255, 0.25), 5px 10px 8px 0px rgba(34, 60, 80, 0.2);
+  font-weight: 600;
+  font-size: clamp(0.375rem, 0.2625rem + 0.5625vw, 0.9375rem);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #303030;
+  max-width: 326px;
+  width: 100%;
+  padding: 30px 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all 0.5s;
+}
+
+.banner-cruise-link:hover {
+  color: #262f79;
+}
+
+.banner-cruise-img {
+  -webkit-clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+  max-width: 45%;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.banner-cruise-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 100%;
+  height: 100%;
+  width: 100%;
+}
+
+.cruise-map-img {
+  width: 100%;
+}
+
+.cruise-map-img img {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+.company-ship-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.company-ship-item {
+  max-width: 200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.company-ship-item img {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+.cruise-seo-text-wrapper {
+  padding: 25px 30px;
+  border-radius: 40px;
+  -webkit-backdrop-filter: blur(10.6000003815px);
+          backdrop-filter: blur(10.6000003815px);
+  background: rgba(217, 217, 217, 0.7);
+}
+
+.cruise-seo-text-wrapper img {
+  max-width: 60%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 3px solid rgba(26, 179, 255, 0.5019607843);
+  border-radius: 50%;
+  box-shadow: 4px 6px 8px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 40px;
+}
+
+.cruise-seo-text-wrapper p img:nth-of-type(1) {
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+.cruise-seo-text {
+  margin-bottom: 80px;
+}
+
+@media (max-width: 992px) {
+  .hero-title {
+    max-width: none;
+  }
+  .hero-blocks {
+    margin-right: auto;
+  }
+  .cruise-main {
+    gap: 80px;
+  }
+  .hero-block {
+    min-height: auto;
+  }
+}
+@media (max-width: 600px) {
+  .cruise-main {
+    gap: 60px;
+  }
+  .cruise-seo-text {
+    margin-bottom: 60px;
+  }
+  .hero-cruise-bg {
+    height: auto;
+  }
+  .hero-cruise {
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 0;
+  }
+  .hero-title h1 {
+    margin-bottom: 10px;
+  }
+  .hero-blocks {
+    margin-top: 40vw;
+    max-width: none;
+    row-gap: 20px;
+  }
+  .hero-btns {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    transform: none;
+    margin-top: 20px;
+    gap: 30px;
+    justify-content: space-between;
+  }
+  .hero-block {
+    border-radius: 12px;
+    color: #4e4e4e;
+  }
+  .hero-call-whatsap {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 23px;
+    text-wrap-mode: nowrap;
+  }
+  .hero-button-zayavka {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 23px;
+    text-wrap-mode: nowrap;
+  }
+  .promotions-cruise h2 {
+    margin-bottom: 40px;
+  }
+  .promotions-grid {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 30px;
+    justify-items: center;
+  }
+  .banner-cruise-info {
+    padding: 13px 5px 15px 10px;
+  }
+  .banner-cruise-link {
+    padding: 12px 10px;
+  }
+  .banner-cruise {
+    gap: 0;
+  }
+  .company-ship-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .cruise-seo-text-wrapper img {
+    max-width: 60% !important;
+    border-radius: 10px;
+    border-width: 1px;
+  }
+  .cruise-seo-text-wrapper {
+    border-radius: 10px;
+    padding: 20px 5px;
+  }
+  .cruise-seo-text-wrapper p {
+    font-size: 14px;
+  }
+  .promotions-item-text {
+    border-radius: 15px;
+  }
+}
+@media (max-width: 420px) {
+  .hero-blocks {
+    margin-top: 32vw;
+  }
+  .hero-call-whatsap {
+    max-width: 138px;
+  }
+  .hero-button-zayavka {
+    max-width: 138px;
+  }
+  .promotions-item {
+    max-width: 140px;
+  }
+}/*# sourceMappingURL=style.css.map */
