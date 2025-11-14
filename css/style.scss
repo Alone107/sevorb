@@ -26,6 +26,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  overflow: hidden;
 }
 
 main {
@@ -87,6 +88,7 @@ img {
   line-height: 150%;
   color: #fff;
   cursor: pointer;
+  max-width: fit-content;
 }
 .btn {
   font-family: var(--font-family);
@@ -104,6 +106,7 @@ img {
   background: transparent;
   cursor: pointer;
   transition-duration: var(--transition);
+  max-width: fit-content;
 }
 
 .btn:hover {
@@ -113,7 +116,7 @@ img {
 // ------------------------header--------------
 
 .header {
-  margin-top: 24px;
+  padding-top: 24px;
   margin-bottom: 24px;
 }
 
@@ -121,6 +124,11 @@ img {
   display: flex;
   gap: 24px;
   align-items: center;
+  max-width: 1520px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .header-menu > .menu-item:not(:last-child) {
@@ -375,7 +383,7 @@ img {
   top: 0;
   z-index: -1;
   height: 100%;
-  width: 40%;
+  width: 25%;
 }
 
 .bg-bigMenu img {
@@ -383,16 +391,21 @@ img {
   width: 100%;
   object-fit: cover;
   object-position: left;
-  min-height: 600px;
 }
 
 .bg-circle-bigMenu {
   position: fixed;
-  left: 0;
+  left: -10%;
   top: 0;
   opacity: 0;
   pointer-events: none;
   transition-duration: var(--transition);
+  background: #a3a3a3;
+  filter: blur(190px);
+  border-radius: 100%;
+  width: 400px;
+  height: 400px;
+  z-index: -1;
 }
 
 .bg-circle-bigMenu.show {
@@ -461,8 +474,8 @@ img {
   animation: fadeIn 1s forwards;
 }
 
-.header-bigMenu .sub-menu .menu-item a:hover .menu-info-title {
-  color: var(--accent);
+.header-bigMenu .sub-menu .menu-item a:hover {
+  opacity: 0.7;
 }
 
 .menu-icons {
@@ -481,6 +494,12 @@ img {
   color: var(--text);
   margin-top: 0;
   margin-bottom: 48px;
+  max-width: 1520px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 22px;
 }
 
 .header-bigMenu-services {
@@ -508,6 +527,12 @@ img {
   display: flex;
   gap: 54px;
   flex-wrap: wrap;
+  max-width: 1520px;
+  padding-left: 40px;
+  padding-right: 240px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 100px;
 }
 
 .header-bigMenu-services .sub-menu .menu-item a {
@@ -518,8 +543,8 @@ img {
   transition-duration: var(--transition);
 }
 
-.header-bigMenu-services .sub-menu .menu-item a:hover .menu-info-title {
-  color: var(--accent);
+.header-bigMenu-services .sub-menu .menu-item a:hover {
+  opacity: 0.7;
 }
 
 // -----------------------footer-------------------------
@@ -582,6 +607,14 @@ img {
 .footer-info-row {
   display: flex;
   gap: 8px;
+  align-items: center;
+}
+
+.procherk {
+  font-weight: 400;
+  line-height: 160%;
+  color: #fff;
+  text-decoration: none;
 }
 
 .footer-info-row dt a {
@@ -682,6 +715,7 @@ img {
   max-width: 1183px;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
 }
 
 .form-row {
@@ -955,5 +989,109 @@ img {
 
   .header-nav {
     display: none;
+  }
+
+  .footer-left {
+    width: 40%;
+  }
+  .footer-right {
+    width: 60%;
+  }
+  .footer-wrap {
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+  .header-bigMenu .header-navigation {
+    padding-left: 40px;
+  }
+}
+
+@media (max-width: 992px) {
+  .footer-right {
+    padding-left: 0;
+  }
+  .footer-wrap {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding: 0 16px;
+  }
+  .header-row {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .header-bigMenu .header-navigation {
+    padding-left: 16px;
+  }
+  .footer {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    padding-right: 42px;
+  }
+  .footer-wrap {
+    flex-direction: column;
+    gap: 48px;
+  }
+  .footer-left {
+    width: 100%;
+    gap: 24px;
+  }
+  .footer-left form {
+    order: 1;
+  }
+  .footer-left .btn {
+    max-width: none;
+    width: 100%;
+    justify-content: center;
+  }
+  .footer-right {
+    width: 100%;
+  }
+  .footer-info-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+  }
+  .procherk {
+    display: none;
+  }
+  .footer-info-row dt {
+    order: 1;
+  }
+  .footer-info-row dl {
+    color: var(--subtext);
+  }
+  .footer-right-blocks {
+    flex-direction: column;
+    gap: 58px;
+  }
+  .footer-language span {
+    text-align: left;
+    margin-bottom: 24px;
+  }
+  .header-search input {
+    min-width: auto;
+    opacity: 0;
+  }
+  .header-search button {
+    left: auto;
+    right: 4px;
+  }
+  .burger {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    padding: 5px;
+  }
+  .burger svg {
+    width: 20px;
+    height: 20px;
   }
 }
