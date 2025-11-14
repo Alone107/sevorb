@@ -120,3 +120,23 @@ if (bigMenuServices) {
     document.removeEventListener("focusin", handleCloseOutside);
   });
 }
+
+const popupForm = document.querySelector(".popup-form");
+
+if (popupForm) {
+  const popupClose = popupForm.querySelector(".popup-close");
+  const popupShadow = popupForm.querySelector(".shadow");
+  const buttonsForm = document.querySelectorAll(".btn-form");
+
+  buttonsForm.forEach((button) => {
+    button.addEventListener("click", () => {
+      popupForm.classList.add("show");
+    });
+  });
+  popupShadow.addEventListener("click", () => {
+    popupForm.classList.remove("show");
+  });
+  popupClose.addEventListener("click", () => {
+    popupForm.classList.remove("show");
+  });
+}

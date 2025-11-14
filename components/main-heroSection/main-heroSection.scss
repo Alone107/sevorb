@@ -55,6 +55,8 @@
   width: 60%;
   height: 100%;
   z-index: -1;
+  mix-blend-mode: plus-lighter;
+  max-width: 890px;
 }
 
 .hero-bg img {
@@ -68,6 +70,23 @@
   position: absolute;
   top: 0;
   right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.technologies-gif {
+  mix-blend-mode: lighten;
+  pointer-events: none;
+}
+
+.technologies-section .bg-circle-white {
+  position: absolute;
+  top: -30%;
+  left: 0;
+  max-width: 792px;
+  max-height: 792px;
   display: flex;
   align-items: center;
   justify-content: center;
