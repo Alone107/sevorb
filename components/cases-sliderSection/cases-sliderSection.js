@@ -4,8 +4,15 @@ if (swiperCase) {
   const swiperCase = new Swiper(".swiper-case", {
     // Optional parameters
     // loop: true,
-    slidesPerView: 1.4,
+    slidesPerView: 1,
     spaceBetween: 24,
+
+    breakpoints: {
+      767: {
+        slidesPerView: 1.4,
+        spaceBetween: 24,
+      },
+    },
 
     // Navigation arrows
     navigation: {
