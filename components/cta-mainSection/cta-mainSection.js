@@ -1,15 +1,12 @@
-var uniqueInOrder = function (iterable) {
-  //your code here - remember iterable can be a string or an array
-  let set = new Set();
+const multiDefault = () => {
+  const elements = document.querySelectorAll(".multi-default");
 
-  iterable = iterable.split("");
-
-  let i = 0;
-  while (i < iterable.length) {
-    set.add(iterable[i]);
-    i++;
-  }
-  console.log(set);
+  elements.forEach((el) => {
+    const choicesOne = new Choices(el, {
+      searchEnabled: false,
+      itemSelectText: "",
+    });
+  });
 };
 
-uniqueInOrder("AAAABBBCCDAABBB");
+multiDefault();

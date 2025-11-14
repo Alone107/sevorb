@@ -16,6 +16,7 @@
       rel="stylesheet"
       href="components/cases-sliderSection/swiper-bundle.min.css"
     />
+    <link rel="stylesheet" href="css/choices.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
@@ -36,6 +37,10 @@
     <link
       rel="stylesheet"
       href="components/ourTeam-whiteSection/ourTeam-whiteSection.css"
+    />
+    <link
+      rel="stylesheet"
+      href="components/cta-mainSection/cta-mainSection.css"
     />
   </head>
   <body>
@@ -511,8 +516,8 @@
               SEVORB - тут будет находиться самое главное
             </h1>
             <div class="hero-buttons">
-              <button class="red-btn">Заказать проект</button>
-              <button class="btn">
+              <button class="red-btn btn-form">Заказать проект</button>
+              <button class="btn btn-form">
                 <span>Оценить проект</span>
                 <img src="images/arrow-right.svg" alt="" />
               </button>
@@ -533,9 +538,9 @@
               </p>
             </div>
           </div>
-          <!-- <div class="hero-bg">
+          <div class="hero-bg">
             <img src="images/main-heroSection/bg.gif" alt="" />
-          </div> -->
+          </div>
 
           <div class="bg-circle-red">
             <svg
@@ -734,7 +739,7 @@
             </div>
             <div class="container">
               <div class="slider-row">
-                <button class="btn">
+                <button class="btn btn-form">
                   <span>Посмотреть все кейсы</span>
                   <img src="images/arrow-right.svg" alt="" />
                 </button>
@@ -1179,7 +1184,9 @@
         <section class="technologies-section">
           <div class="container">
             <div class="technologies-wrapper">
-              <div class="technologies-gif"></div>
+              <div class="technologies-gif">
+                <img src="images/technologies-section/bg-gif-tech.gif" alt="" />
+              </div>
               <div class="technologies-info">
                 <h2>Технологии</h2>
                 <b
@@ -1395,6 +1402,45 @@
               </defs>
             </svg>
           </div>
+          <div class="bg-circle-white">
+            <svg
+              width="792"
+              height="1282"
+              viewBox="0 0 792 1282"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g filter="url(#filter0_f_472_13209)">
+                <path
+                  d="M348 641C348 749.8 259.8 838 151 838C42.1999 838 -46 749.8 -46 641C-46 532.2 42.1999 444 151 444C259.8 444 348 532.2 348 641Z"
+                  fill="#A3A3A3"
+                />
+              </g>
+              <defs>
+                <filter
+                  id="filter0_f_472_13209"
+                  x="-490"
+                  y="0"
+                  width="1282"
+                  height="1282"
+                  filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB"
+                >
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="BackgroundImageFix"
+                    result="shape"
+                  />
+                  <feGaussianBlur
+                    stdDeviation="222"
+                    result="effect1_foregroundBlur_472_13209"
+                  />
+                </filter>
+              </defs>
+            </svg>
+          </div>
         </section>
         <section class="ourTeam-whiteSection">
           <div class="container">
@@ -1433,11 +1479,160 @@
                   <img src="images/ourTeam-whiteSection/man-4.png" alt="" />
                 </div>
               </div>
-              <button class="btn">
+              <button class="btn btn-form">
                 <span>Подробнее о нас</span>
                 <img src="images/arrow-right-dark.svg" alt="" />
               </button>
             </div>
+          </div>
+        </section>
+        <section class="cta-mainSection">
+          <div class="container">
+            <h2 class="cta-mainSection-title">
+              Давайте поговорим о вашем проекте. Мы предложим решения.
+            </h2>
+            <div class="form-custom">
+              <form class="form">
+                <div class="form-row">
+                  <div class="form-block">
+                    <span class="wpcf7-form-control-wrap">
+                      <label for="form-name">Имя</label>
+                      <input
+                        type="text"
+                        id="form-name"
+                        required
+                        placeholder="Введите ваше имя"
+                      />
+                    </span>
+                  </div>
+                  <div class="form-block">
+                    <span class="wpcf7-form-control-wrap">
+                      <label for="form-email">Email</label>
+                      <input
+                        type="email"
+                        id="form-email"
+                        required
+                        placeholder="Введите ваш Email"
+                      />
+                    </span>
+                  </div>
+                  <div class="form-block">
+                    <span class="wpcf7-form-control-wrap">
+                      <label for="form-tel">Телефон</label>
+                      <input
+                        type="tel"
+                        id="form-tel"
+                        required
+                        placeholder="Введите ваш телефон"
+                      />
+                    </span>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-block">
+                    <span class="wpcf7-form-control-wrap">
+                      <label for="form-service">Выберите услугу</label>
+                      <select
+                        name=""
+                        id="form-service"
+                        class="multi-default"
+                        required
+                      >
+                        <option value="" disabled selected>
+                          Выберите услугу
+                        </option>
+                        <option value="Услуга 1">Услуга 1</option>
+                        <option value="Услуга 2">Услуга 2</option>
+                        <option value="Услуга 3">Услуга 3</option>
+                        <option value="Услуга 3">Услуга 3</option>
+                        <option value="Услуга 3">Услуга 3</option>
+                      </select>
+                    </span>
+                  </div>
+                  <div class="form-block">
+                    <span class="wpcf7-form-control-wrap">
+                      <label for="form-company">Название компании</label>
+                      <input
+                        type="text"
+                        id="form-company"
+                        required
+                        placeholder="Введите название"
+                      />
+                    </span>
+                  </div>
+                  <div class="form-block">
+                    <span class="wpcf7-form-control-wrap">
+                      <label for="form-theme">Тема</label>
+                      <select
+                        name=""
+                        id="form-theme"
+                        class="multi-default"
+                        required
+                      >
+                        <option value="" disabled selected>
+                          Выберите тему
+                        </option>
+                        <option value="Тема 1">Тема 1</option>
+                        <option value="Тема 2">Тема 2</option>
+                        <option value="Тема 3">Тема 3</option>
+                      </select>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="form-textarea">
+                  <label for="form-textarea">Ваше сообщение</label>
+                  <textarea
+                    name=""
+                    id="form-textarea"
+                    placeholder="Введите ваше сообщение"
+                  ></textarea>
+                </div>
+                <button class="btn" type="submit">
+                  <span>Отправить запрос</span>
+                  <img src="images/arrow-right.svg" alt="" />
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="bg-circle-red">
+            <svg
+              width="989"
+              height="1268"
+              viewBox="0 0 989 1268"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g filter="url(#filter0_f_43767_5126)">
+                <circle cx="355" cy="634" r="220" fill="#BE3455" />
+              </g>
+              <defs>
+                <filter
+                  id="filter0_f_43767_5126"
+                  x="-279"
+                  y="0"
+                  width="1268"
+                  height="1268"
+                  filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB"
+                >
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="BackgroundImageFix"
+                    result="shape"
+                  />
+                  <feGaussianBlur
+                    stdDeviation="207"
+                    result="effect1_foregroundBlur_43767_5126"
+                  />
+                </filter>
+              </defs>
+            </svg>
+          </div>
+          <div class="bg-circle">
+            <img src="images/cta-mainSection/bg.png" alt="" />
           </div>
         </section>
       </main>
@@ -1568,10 +1763,143 @@
           </div>
         </div>
       </footer>
+
+      <div class="popup-form">
+        <div class="shadow"></div>
+        <div class="popup-wrapper">
+          <button class="popup-close">
+            <svg
+              width="36"
+              height="36"
+              viewBox="0 0 36 36"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18 34.125C9.105 34.125 1.875 26.895 1.875 18C1.875 9.105 9.105 1.875 18 1.875C26.895 1.875 34.125 9.105 34.125 18C34.125 26.895 26.895 34.125 18 34.125ZM18 4.125C10.35 4.125 4.125 10.35 4.125 18C4.125 25.65 10.35 31.875 18 31.875C25.65 31.875 31.875 25.65 31.875 18C31.875 10.35 25.65 4.125 18 4.125Z"
+                fill="#F9F9F9"
+              />
+              <path
+                d="M13.755 23.3691C13.47 23.3691 13.185 23.2641 12.96 23.0391C12.525 22.6041 12.525 21.8841 12.96 21.4491L21.45 12.9591C21.885 12.5241 22.605 12.5241 23.04 12.9591C23.475 13.3941 23.475 14.1141 23.04 14.5491L14.55 23.0391C14.34 23.2641 14.04 23.3691 13.755 23.3691Z"
+                fill="#F9F9F9"
+              />
+              <path
+                d="M22.245 23.3691C21.96 23.3691 21.675 23.2641 21.45 23.0391L12.96 14.5491C12.525 14.1141 12.525 13.3941 12.96 12.9591C13.395 12.5241 14.115 12.5241 14.55 12.9591L23.04 21.4491C23.475 21.8841 23.475 22.6041 23.04 23.0391C22.815 23.2641 22.53 23.3691 22.245 23.3691Z"
+                fill="#F9F9F9"
+              />
+            </svg>
+          </button>
+          <b>Форма онлайн заявки</b>
+          <p>Пожалуйста, заполните форму и мы ответим в ближайшие 24 часа</p>
+          <div class="form-custom">
+            <form class="form">
+              <div class="form-row">
+                <div class="form-block">
+                  <span class="wpcf7-form-control-wrap">
+                    <label for="form-name-2">Имя</label>
+                    <input
+                      type="text"
+                      id="form-name-2"
+                      required
+                      placeholder="Введите ваше имя"
+                    />
+                  </span>
+                </div>
+                <div class="form-block">
+                  <span class="wpcf7-form-control-wrap">
+                    <label for="form-email-2">Email</label>
+                    <input
+                      type="email"
+                      id="form-email-2"
+                      required
+                      placeholder="Введите ваш Email"
+                    />
+                  </span>
+                </div>
+                <div class="form-block">
+                  <span class="wpcf7-form-control-wrap">
+                    <label for="form-tel-2">Телефон</label>
+                    <input
+                      type="tel"
+                      id="form-tel-2"
+                      required
+                      placeholder="Введите ваш телефон"
+                    />
+                  </span>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-block">
+                  <span class="wpcf7-form-control-wrap">
+                    <label for="form-service-2">Выберите услугу</label>
+                    <select
+                      name=""
+                      id="form-service-2"
+                      class="multi-default"
+                      required
+                    >
+                      <option value="" disabled selected>
+                        Выберите услугу
+                      </option>
+                      <option value="Услуга 1">Услуга 1</option>
+                      <option value="Услуга 2">Услуга 2</option>
+                      <option value="Услуга 3">Услуга 3</option>
+                      <option value="Услуга 3">Услуга 3</option>
+                      <option value="Услуга 3">Услуга 3</option>
+                    </select>
+                  </span>
+                </div>
+                <div class="form-block">
+                  <span class="wpcf7-form-control-wrap">
+                    <label for="form-company-2">Название компании</label>
+                    <input
+                      type="text"
+                      id="form-company-2"
+                      required
+                      placeholder="Введите название"
+                    />
+                  </span>
+                </div>
+                <div class="form-block">
+                  <span class="wpcf7-form-control-wrap">
+                    <label for="form-theme-2">Тема</label>
+                    <select
+                      name=""
+                      id="form-theme-2"
+                      class="multi-default"
+                      required
+                    >
+                      <option value="" disabled selected>Выберите тему</option>
+                      <option value="Тема 1">Тема 1</option>
+                      <option value="Тема 2">Тема 2</option>
+                      <option value="Тема 3">Тема 3</option>
+                    </select>
+                  </span>
+                </div>
+              </div>
+
+              <div class="form-textarea">
+                <label for="form-textarea-2">Ваше сообщение</label>
+                <textarea
+                  name=""
+                  id="form-textarea-2"
+                  placeholder="Введите ваше сообщение"
+                ></textarea>
+              </div>
+              <button class="btn" type="submit">
+                <span>Отправить запрос</span>
+                <img src="images/arrow-right.svg" alt="" />
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
   <script src="components/cases-sliderSection/swiper-bundle.min.js"></script>
   <script src="components/cases-sliderSection/cases-sliderSection.js"></script>
   <script src="components/technologies-section/technologies-section.js"></script>
+  <script src="js/choices.min.js"></script>
+  <script src="components/cta-mainSection/cta-mainSection.js"></script>
   <script src="js/main.js"></script>
 </html>
