@@ -3,6 +3,7 @@
   padding-bottom: 102px;
   background: var(--text);
   position: relative;
+  overflow: hidden;
 }
 
 .outTeam-info h2 {
