@@ -12,6 +12,8 @@
   text-transform: uppercase;
   color: #fff;
   margin-bottom: 12px;
+  position: relative;
+  z-index: 3;
 }
 
 .sliderSection-text {
@@ -23,6 +25,8 @@
   margin-bottom: 64px;
   max-width: 980px;
   display: block;
+  position: relative;
+  z-index: 3;
 }
 
 .slide-case {
