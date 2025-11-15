@@ -203,7 +203,7 @@
 @media (max-width: 767px) {
   .services-whiteSection {
     padding-top: 64px;
-    padding-bottom: 34px;
+    padding-bottom: 0px;
   }
   .services-wrap {
     flex-direction: column;
@@ -211,6 +211,9 @@
   }
   .services-left-scroll {
     order: 1;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 34px;
   }
   .services-left-wrap {
     flex-direction: row;

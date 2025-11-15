@@ -59,9 +59,23 @@
   max-width: 50vw;
 }
 
+// .hero-bg-shadow {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   background: radial-gradient(
+//     51.34% 51.34% at 50% 50%,
+//     #000 61.06%,
+//     rgba(34, 100, 144, 0) 100%
+//   );
+// }
+
 .hero-bg img {
   width: 100%;
   height: 100%;
+  border-radius: 150px;
 }
 
 .heroSection .bg-circle-red {
@@ -117,8 +131,10 @@
 
 @media (max-width: 992px) {
   .hero-bg {
-    max-width: 80vw;
+    max-width: 100vw;
     width: 100%;
+    left: 10%;
+    height: 100vw;
   }
   .technologies-gif {
     display: none;
