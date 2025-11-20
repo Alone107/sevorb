@@ -11,6 +11,7 @@ if (swiperServicesLeft) {
       delay: 0,
       disableOnInteraction: false,
       pauseOnMouseEnter: true, // Добавляем этот параметр
+      waitForTransition: false,
     },
 
     breakpoints: {
@@ -25,6 +26,7 @@ if (swiperServicesLeft) {
           delay: 0,
           disableOnInteraction: false,
           pauseOnMouseEnter: true, // Добавляем этот параметр
+          waitForTransition: false,
         },
       },
     },
@@ -43,6 +45,7 @@ if (swiperServicesRight) {
       delay: 0,
       disableOnInteraction: false,
       pauseOnMouseEnter: true, // Добавляем этот параметр
+      waitForTransition: false,
     },
     breakpoints: {
       767: {
@@ -56,6 +59,7 @@ if (swiperServicesRight) {
           disableOnInteraction: false,
           reverseDirection: true,
           pauseOnMouseEnter: true, // Добавляем этот параметр
+          waitForTransition: false,
         },
       },
     },
