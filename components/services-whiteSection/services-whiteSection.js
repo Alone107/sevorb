@@ -9,10 +9,8 @@ if (swiperServicesLeft) {
     speed: 3000,
     freeMode: true,
     autoplay: {
-      delay: 1,
-      disableOnInteraction: false,
+      delay: 0,
       pauseOnMouseEnter: true, // Добавляем этот параметр
-      waitForTransition: false,
     },
 
     breakpoints: {
@@ -24,24 +22,11 @@ if (swiperServicesLeft) {
         freeMode: true,
         speed: 3000,
         autoplay: {
-          delay: 1,
-          disableOnInteraction: false,
+          delay: 0,
           pauseOnMouseEnter: true, // Добавляем этот параметр
-          waitForTransition: false,
         },
       },
     },
-  });
-
-  // Правильные обработчики событий мыши
-  const swiperElement = document.querySelector(".swiper-services-left");
-
-  swiperElement.addEventListener("mouseenter", () => {
-    swiperServicesLeft.autoplay.pause();
-  });
-
-  swiperElement.addEventListener("mouseleave", () => {
-    swiperServicesLeft.autoplay.start();
   });
 }
 
@@ -55,7 +40,7 @@ if (swiperServicesRight) {
     speed: 3000,
     freeMode: true,
     autoplay: {
-      delay: 1,
+      delay: 0,
       disableOnInteraction: false,
       pauseOnMouseEnter: true, // Добавляем этот параметр
       waitForTransition: false,
@@ -69,7 +54,7 @@ if (swiperServicesRight) {
         speed: 3000,
         freeMode: true,
         autoplay: {
-          delay: 1,
+          delay: 0,
           disableOnInteraction: false,
           reverseDirection: true,
           pauseOnMouseEnter: true, // Добавляем этот параметр
