@@ -5,10 +5,11 @@ if (swiperServicesLeft) {
     slidesPerView: 1.4,
     spaceBetween: 26,
     freeMode: true,
-    speed: 1500,
+    speed: 800,
+    waitTransition: false,
 
     autoplay: {
-      delay: 0,
+      delay: 2000,
     },
     breakpoints: {
       767: {
@@ -17,9 +18,12 @@ if (swiperServicesLeft) {
         loop: true,
         spaceBetween: 26,
         freeMode: true,
-        speed: 1500,
+        speed: 800,
+        waitTransition: false,
+
         autoplay: {
           delay: 0,
+          disableOnInteraction: false,
         },
       },
     },
@@ -27,6 +31,7 @@ if (swiperServicesLeft) {
 
   swiperServicesLeft.el.addEventListener("mouseenter", () => {
     swiperServicesLeft.autoplay.stop();
+    swiperServicesLeft.setTranslate(swiperServicesLeft.translate); // фиксируем позицию прямо сейчас
   });
 
   swiperServicesLeft.el.addEventListener("mouseleave", () => {
@@ -41,10 +46,11 @@ if (swiperServicesRight) {
     loop: true,
     slidesPerView: 1.4,
     spaceBetween: 26,
-    speed: 1500,
+    speed: 800,
     freeMode: true,
     autoplay: {
-      delay: 0,
+      delay: 2000,
+      waitTransition: false,
     },
     breakpoints: {
       767: {
@@ -52,17 +58,20 @@ if (swiperServicesRight) {
         loop: true,
         slidesPerView: 2.4,
         spaceBetween: 26,
-        speed: 1500,
         freeMode: true,
         autoplay: {
+          speed: 3000,
           delay: 0,
           reverseDirection: true,
+          disableOnInteraction: false,
+          waitTransition: false,
         },
       },
     },
   });
   swiperServicesRight.el.addEventListener("mouseenter", () => {
     swiperServicesRight.autoplay.stop();
+    swiperServicesRight.setTranslate(swiperServicesRight.translate); // фиксируем позицию прямо сейчас
   });
 
   swiperServicesRight.el.addEventListener("mouseleave", () => {
