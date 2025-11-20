@@ -54,6 +54,10 @@ img {
      object-fit: cover;
 }
 
+object {
+  pointer-events: none;
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -115,7 +119,6 @@ img {
 
 .header {
   padding-top: 24px;
-  margin-bottom: 24px;
 }
 
 .header-row {
@@ -268,9 +271,7 @@ img {
   visibility: hidden;
   transition-duration: var(--transition);
   transform: translateY(-100%);
-  margin-top: 10px;
   border-top: 1px solid rgba(151, 154, 160, 0.5);
-  padding-top: 10px;
   position: relative;
   height: 0;
 }
@@ -281,6 +282,8 @@ img {
   visibility: visible;
   transform: translateY(0%);
   height: auto;
+  padding-top: 10px;
+  margin-top: 10px;
 }
 
 .header-menu {
@@ -542,9 +545,7 @@ img {
   visibility: hidden;
   transition-duration: var(--transition);
   transform: translateY(-100%);
-  margin-top: 10px;
   border-top: 1px solid rgba(151, 154, 160, 0.5);
-  padding-top: 10px;
   position: relative;
   height: 0;
 }
@@ -555,6 +556,8 @@ img {
   visibility: visible;
   transform: translateY(0%);
   height: auto;
+  margin-top: 10px;
+  padding-top: 10px;
 }
 
 .header-bigMenu-services .sub-menu {
@@ -618,7 +621,7 @@ img {
   padding-left: 50px;
   display: flex;
   flex-direction: column;
-  gap: 58px;
+  gap: 16px;
 }
 
 .footer-right-title {
@@ -627,7 +630,6 @@ img {
   letter-spacing: -0.01em;
   color: #fff;
   display: block;
-  margin-bottom: 16px;
 }
 
 .footer-right dl {
@@ -654,6 +656,11 @@ img {
   line-height: 160%;
   color: #fff;
   text-decoration: none;
+  transition-duration: var(--transition);
+}
+
+.footer-info-row dt a:hover {
+  color: var(--accent);
 }
 
 .footer-info-row dl {
@@ -665,6 +672,8 @@ img {
 .footer-socials {
   display: flex;
   gap: 24px;
+  margin-top: 42px;
+  margin-bottom: 42px;
 }
 
 .footer-socials a {
@@ -767,11 +776,19 @@ img {
   position: relative;
 }
 
+body.scroll-off {
+  overflow: hidden;
+}
+
 .form-custom label {
   line-height: 150%;
   color: #fff;
   margin-bottom: 10px;
   display: block;
+}
+
+body:has(.popup-form.show) {
+  overflow: hidden;
 }
 
 .form-custom input {
@@ -832,7 +849,7 @@ img {
   top: 50%;
   margin-top: -8px;
   pointer-events: none;
-  background-image: url("../../images/header/arrow-down.svg");
+  background-image: url("../images/header/arrow-down.svg");
   background-repeat: no-repeat;
   transition-duration: var(--transition);
   background-position: center;
@@ -996,7 +1013,7 @@ img {
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  margin: 60px auto;
+  margin: 10px auto;
 }
 
 .popup-close {
@@ -1198,5 +1215,8 @@ img {
   .burger::after {
     width: 20px;
     height: 20px;
+  }
+  .header {
+    padding-top: 15px;
   }
 }/*# sourceMappingURL=style.css.map */
