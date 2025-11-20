@@ -891,6 +891,7 @@ body:has(.popup-form.show) {
   border-top: none;
   border-bottom: none;
   transition: all 0.6s;
+  transition-delay: 0.4s;
 }
 
 .form-custom .is-open .choices__list--dropdown .choices__list {
