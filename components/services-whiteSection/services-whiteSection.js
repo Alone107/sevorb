@@ -32,6 +32,17 @@ if (swiperServicesLeft) {
       },
     },
   });
+
+  // Правильные обработчики событий мыши
+  const swiperElement = document.querySelector(".swiper-services-left");
+
+  swiperElement.addEventListener("mouseenter", () => {
+    swiperServicesLeft.autoplay.pause();
+  });
+
+  swiperElement.addEventListener("mouseleave", () => {
+    swiperServicesLeft.autoplay.start();
+  });
 }
 
 const swiperServicesRight = document.querySelector(".swiper-services-right");
