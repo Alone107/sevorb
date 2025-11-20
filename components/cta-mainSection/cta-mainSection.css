@@ -93,6 +93,10 @@
     flex-direction: column;
     gap: 50px;
   }
+  .choices,
+  #form-company {
+    max-width: none;
+  }
   @keyframes bg-circle-cta {
     0% {
       transform: translate(0%, 170%);

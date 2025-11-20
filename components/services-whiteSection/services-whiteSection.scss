@@ -161,6 +161,16 @@
   }
 }
 
+@keyframes scrollBottomMobile {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
 @keyframes scrollTop {
   0% {
     transform: translateY(-50%);
@@ -227,6 +237,7 @@
   }
   .services-left {
     flex-direction: row;
+    animation: scrollBottomMobile 20s linear infinite;
   }
   .services-block-bg {
     left: 50%;
