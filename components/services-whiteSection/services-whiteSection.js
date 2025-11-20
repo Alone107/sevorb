@@ -8,6 +8,7 @@ if (swiperServicesLeft) {
     spaceBetween: 26,
     speed: 3000,
     freeMode: true,
+
     autoplay: {
       delay: 0,
       pauseOnMouseEnter: true, // Добавляем этот параметр
