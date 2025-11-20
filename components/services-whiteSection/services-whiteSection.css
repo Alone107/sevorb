@@ -150,6 +150,10 @@
   animation: bgScroll 20s infinite linear;
 }
 
+.swiper-services-left {
+  display: none;
+}
+
 @keyframes scrollBottom {
   0% {
     transform: translateY(0%);
@@ -212,9 +216,15 @@
     order: 1;
     padding-left: 0;
     padding-right: 0;
-    padding-bottom: 34px;
-    width: 100vh;
+    padding-bottom: 0px;
+    width: 100%;
     display: flex;
+  }
+  .swiper-services-left {
+    padding-bottom: 34px;
+  }
+  .services-block {
+    min-width: auto;
   }
   .services-left .services-left-wrap:nth-child(2) {
     display: none;
@@ -252,5 +262,11 @@
   }
   .services-center b {
     max-width: none;
+  }
+  .swiper-services-left {
+    display: flex;
+  }
+  .services-left {
+    display: none;
   }
 }/*# sourceMappingURL=services-whiteSection.css.map */
