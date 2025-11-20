@@ -14,25 +14,18 @@ multiDefault();
 const swiperServicesLeft = document.querySelector(".swiper-services-left");
 
 if (swiperServicesLeft) {
-  const swiperServicesLeft = new Swiper(".swiper", {
+  const swiperServicesLeft = new Swiper(".swiper-services-left", {
     // Optional parameters
-    direction: "vertical",
     loop: true,
+    slidesPerView: 1.4,
+    spaceBetween: 26,
 
-    // If we need pagination
-    pagination: {
-      el: ".swiper-pagination",
-    },
+    // Настройка скорости и плавности
+    speed: 3000,
 
-    // Navigation arrows
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-
-    // And if we need scrollbar
-    scrollbar: {
-      el: ".swiper-scrollbar",
+    // Автоматическая прокрутка
+    autoplay: {
+      delay: 100,
     },
   });
 }
