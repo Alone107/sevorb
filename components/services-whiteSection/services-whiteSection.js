@@ -1,15 +1,16 @@
-var uniqueInOrder = function (iterable) {
-  //your code here - remember iterable can be a string or an array
-  let set = new Set();
+const swiperServicesLeft = document.querySelector(".swiper-services-left");
 
-  iterable = iterable.split("");
+if (swiperServicesLeft) {
+  const swiperServicesLeft = new Swiper(".swiper-services-left", {
+    // Optional parameters
+    loop: true,
+    slidesPerView: 1.4,
+    spaceBetween: 26,
 
-  let i = 0;
-  while (i < iterable.length) {
-    set.add(iterable[i]);
-    i++;
-  }
-  console.log(set);
-};
+    speed: 10000,
 
-uniqueInOrder("AAAABBBCCDAABBB");
+    autoplay: {
+      delay: 0,
+    },
+  });
+}
