@@ -1,19 +1,15 @@
 const swiperServicesLeft = document.querySelector(".swiper-services-left");
-
 if (swiperServicesLeft) {
   const swiperServicesLeft = new Swiper(".swiper-services-left", {
-    // Optional parameters
     loop: true,
     slidesPerView: 1.4,
     spaceBetween: 26,
-    speed: 3000,
     freeMode: true,
+    speed: 1500,
 
     autoplay: {
       delay: 0,
-      pauseOnMouseEnter: true, // Добавляем этот параметр
     },
-
     breakpoints: {
       767: {
         slidesPerView: 2.4,
@@ -21,13 +17,20 @@ if (swiperServicesLeft) {
         loop: true,
         spaceBetween: 26,
         freeMode: true,
-        speed: 3000,
+        speed: 1500,
         autoplay: {
           delay: 0,
-          pauseOnMouseEnter: true, // Добавляем этот параметр
         },
       },
     },
+  });
+
+  swiperServicesLeft.el.addEventListener("mouseenter", () => {
+    swiperServicesLeft.autoplay.stop();
+  });
+
+  swiperServicesLeft.el.addEventListener("mouseleave", () => {
+    swiperServicesLeft.autoplay.start();
   });
 }
 
@@ -38,11 +41,10 @@ if (swiperServicesRight) {
     loop: true,
     slidesPerView: 1.4,
     spaceBetween: 26,
-    speed: 3000,
+    speed: 1500,
     freeMode: true,
     autoplay: {
       delay: 0,
-      pauseOnMouseEnter: true, // Добавляем этот параметр
     },
     breakpoints: {
       767: {
@@ -50,14 +52,20 @@ if (swiperServicesRight) {
         loop: true,
         slidesPerView: 2.4,
         spaceBetween: 26,
-        speed: 3000,
+        speed: 1500,
         freeMode: true,
         autoplay: {
           delay: 0,
           reverseDirection: true,
-          pauseOnMouseEnter: true, // Добавляем этот параметр
         },
       },
     },
+  });
+  swiperServicesRight.el.addEventListener("mouseenter", () => {
+    swiperServicesRight.autoplay.stop();
+  });
+
+  swiperServicesRight.el.addEventListener("mouseleave", () => {
+    swiperServicesRight.autoplay.start();
   });
 }
