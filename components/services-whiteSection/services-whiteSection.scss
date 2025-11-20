@@ -156,6 +156,7 @@
 
 .swiper-services-left .swiper-wrapper {
   transition-timing-function: linear !important;
+  max-height: fit-content;
 }
 
 @media (max-width: 1280px) {
