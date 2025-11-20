@@ -205,6 +205,11 @@
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 34px;
+    width: 100vh;
+    display: flex;
+  }
+  .services-left .services-left-wrap:nth-child(2) {
+    display: none;
   }
   .services-left-wrap {
     flex-direction: row;
