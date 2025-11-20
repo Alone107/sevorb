@@ -285,4 +285,8 @@
   .swiper-services-left {
     display: flex;
   }
+  .swiper-services-left {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }/*# sourceMappingURL=services-whiteSection.css.map */
