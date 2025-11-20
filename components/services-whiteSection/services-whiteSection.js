@@ -7,6 +7,7 @@ if (swiperServicesLeft) {
     slidesPerView: 1.4,
     spaceBetween: 26,
     speed: 3000,
+    freeMode: true,
     autoplay: {
       delay: 0,
       disableOnInteraction: false,
@@ -20,7 +21,7 @@ if (swiperServicesLeft) {
         direction: "vertical",
         loop: true,
         spaceBetween: 26,
-
+        freeMode: true,
         speed: 3000,
         autoplay: {
           delay: 0,
@@ -41,6 +42,7 @@ if (swiperServicesRight) {
     slidesPerView: 1.4,
     spaceBetween: 26,
     speed: 3000,
+    freeMode: true,
     autoplay: {
       delay: 0,
       disableOnInteraction: false,
@@ -54,6 +56,7 @@ if (swiperServicesRight) {
         slidesPerView: 2.4,
         spaceBetween: 26,
         speed: 3000,
+        freeMode: true,
         autoplay: {
           delay: 0,
           disableOnInteraction: false,
