@@ -1,9 +1,10 @@
 const languageArrow = document.querySelector(".language-arrow");
 if (languageArrow) {
   const languageMenu = document.querySelector(".language-menu");
+  const languageUse = document.querySelector(".language-use");
 
   // Существующий обработчик клика по стрелке
-  languageArrow.addEventListener("click", (event) => {
+  languageUse.addEventListener("click", (event) => {
     event.stopPropagation(); // Предотвращаем всплытие события
     languageMenu.classList.toggle("show");
     languageArrow.classList.toggle("show");
@@ -84,6 +85,30 @@ if (bigMenu) {
   });
 }
 
+const scrollLockTimeouts = new Map();
+let isScrollLocked = false;
+
+function addScrollLock() {
+  if (scrollLockTimeouts.has("scroll-lock")) {
+    clearTimeout(scrollLockTimeouts.get("scroll-lock"));
+  }
+
+  const timeoutId = setTimeout(() => {
+    document.body.classList.add("scroll-off");
+    scrollLockTimeouts.delete("scroll-lock");
+  }, 100);
+
+  scrollLockTimeouts.set("scroll-lock", timeoutId);
+}
+
+function removeScrollLock() {
+  if (scrollLockTimeouts.has("scroll-lock")) {
+    clearTimeout(scrollLockTimeouts.get("scroll-lock"));
+    scrollLockTimeouts.delete("scroll-lock");
+  }
+  document.body.classList.remove("scroll-off");
+}
+
 const bigMenuServices = document.querySelector(".header-bigMenu-services");
 if (bigMenuServices) {
   const headerBigMenuLink = document.querySelector(".menu-item-submenu");
@@ -97,6 +122,7 @@ if (bigMenuServices) {
       bigMenuServices.classList.remove("show");
       headerBigMenuLinkArrow.classList.remove("show");
       bgCircleWhite.classList.remove("show");
+      removeScrollLock();
     }
   }
 
@@ -108,6 +134,7 @@ if (bigMenuServices) {
     bigMenuServices.classList.toggle("show");
     headerBigMenuLinkArrow.classList.toggle("show");
     bgCircleWhite.classList.toggle("show");
+    document.body.classList.toggle("scroll-off");
   });
 
   // Добавляем обработчики для клика и фокуса снаружи меню
@@ -140,3 +167,29 @@ if (popupForm) {
     popupForm.classList.remove("show");
   });
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  const container = document.querySelector(".services-left-scroll");
+
+  let startX = 0;
+  let currentX = 0;
+  let isScrolling = false;
+
+  container.addEventListener("touchstart", function (e) {
+    startX = e.touches[0].clientX - container.scrollLeft;
+    isScrolling = true;
+  });
+
+  container.addEventListener("touchmove", function (e) {
+    if (!isScrolling) return;
+
+    currentX = e.touches[0].clientX - startX;
+    container.style.scrollBehavior = "auto";
+    container.scrollLeft = currentX;
+  });
+
+  container.addEventListener("touchend", function () {
+    isScrolling = false;
+    container.style.scrollBehavior = "";
+  });
+});

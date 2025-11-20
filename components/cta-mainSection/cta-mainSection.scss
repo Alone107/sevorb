@@ -46,6 +46,11 @@
   pointer-events: none;
 }
 
+.choices,
+#form-company {
+  max-width: 321px;
+}
+
 @keyframes bg-circle-cta {
   0% {
     transform: translate(0%, 0%);
