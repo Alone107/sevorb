@@ -55,8 +55,6 @@
   overflow: auto;
   scrollbar-width: none;
   scrollbar-color: transparent transparent;
-  padding-left: 68px;
-  padding-right: 90px;
   min-width: 420px;
   position: relative;
   max-height: 626px;
@@ -66,8 +64,6 @@
   overflow: auto;
   scrollbar-width: none;
   scrollbar-color: transparent transparent;
-  padding-left: 90px;
-  padding-right: 118px;
   min-width: 420px;
   position: relative;
   max-height: 626px;
@@ -150,8 +146,27 @@
   animation: bgScroll 20s infinite linear;
 }
 
-.swiper-services-left {
+.services-left {
   display: none;
+}
+
+.swiper-services-left {
+  padding-left: 68px;
+  padding-right: 90px;
+}
+
+.swiper-services-left,
+.swiper-services-right {
+  max-height: 626px;
+}
+
+.swiper-services-right .swiper-wrapper {
+  transition-timing-function: linear !important;
+}
+
+.swiper-services-right {
+  padding-left: 90px;
+  padding-right: 118px;
 }
 
 @keyframes scrollBottom {
@@ -189,6 +204,10 @@
     transform: scale(1) translate(-50%, -50%);
   }
 }
+.swiper-services-left .swiper-wrapper {
+  transition-timing-function: linear !important;
+}
+
 @media (max-width: 1280px) {
   .services-right-scroll,
   .services-block-bg-right {
@@ -239,7 +258,7 @@
   .services-block-bg {
     left: 50%;
     max-height: 180px;
-    top: 80%;
+    top: 75%;
   }
   @keyframes scrollBottom {
     0% {
@@ -265,8 +284,5 @@
   }
   .swiper-services-left {
     display: flex;
-  }
-  .services-left {
-    display: none;
   }
 }/*# sourceMappingURL=services-whiteSection.css.map */
