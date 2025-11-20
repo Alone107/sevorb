@@ -167,29 +167,3 @@ if (popupForm) {
     popupForm.classList.remove("show");
   });
 }
-
-document.addEventListener("DOMContentLoaded", function () {
-  const container = document.querySelector(".services-left-scroll");
-
-  let startX = 0;
-  let currentX = 0;
-  let isScrolling = false;
-
-  container.addEventListener("touchstart", function (e) {
-    startX = e.touches[0].clientX - container.scrollLeft;
-    isScrolling = true;
-  });
-
-  container.addEventListener("touchmove", function (e) {
-    if (!isScrolling) return;
-
-    currentX = e.touches[0].clientX - startX;
-    container.style.scrollBehavior = "auto";
-    container.scrollLeft = currentX;
-  });
-
-  container.addEventListener("touchend", function () {
-    isScrolling = false;
-    container.style.scrollBehavior = "";
-  });
-});
