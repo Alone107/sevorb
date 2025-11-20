@@ -41,9 +41,7 @@ if (swiperServicesRight) {
     freeMode: true,
     autoplay: {
       delay: 0,
-      disableOnInteraction: false,
       pauseOnMouseEnter: true, // Добавляем этот параметр
-      waitForTransition: false,
     },
     breakpoints: {
       767: {
@@ -55,10 +53,8 @@ if (swiperServicesRight) {
         freeMode: true,
         autoplay: {
           delay: 0,
-          disableOnInteraction: false,
           reverseDirection: true,
           pauseOnMouseEnter: true, // Добавляем этот параметр
-          waitForTransition: false,
         },
       },
     },
