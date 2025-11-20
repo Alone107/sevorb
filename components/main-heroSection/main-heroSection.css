@@ -52,7 +52,7 @@
 
 .hero-bg {
   position: absolute;
-  top: 0;
+  top: -40px;
   right: 0;
   width: 60%;
   height: 100%;
@@ -152,6 +152,7 @@
     max-height: 100vw;
     max-width: 100vw;
     right: -20%;
+    top: 0;
   }
   .heroSection .bg-circle-red {
     top: auto;
