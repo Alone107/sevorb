@@ -6,10 +6,11 @@ if (swiperServicesLeft) {
     loop: true,
     slidesPerView: 1.4,
     spaceBetween: 26,
-    speed: 4000,
+    speed: 3000,
     autoplay: {
       delay: 0,
       disableOnInteraction: false,
+      pauseOnMouseEnter: true, // Добавляем этот параметр
     },
 
     breakpoints: {
@@ -19,10 +20,11 @@ if (swiperServicesLeft) {
         loop: true,
         spaceBetween: 26,
 
-        speed: 4000,
+        speed: 3000,
         autoplay: {
           delay: 0,
           disableOnInteraction: false,
+          pauseOnMouseEnter: true, // Добавляем этот параметр
         },
       },
     },
@@ -36,10 +38,11 @@ if (swiperServicesRight) {
     loop: true,
     slidesPerView: 1.4,
     spaceBetween: 26,
-    speed: 4000,
+    speed: 3000,
     autoplay: {
       delay: 0,
       disableOnInteraction: false,
+      pauseOnMouseEnter: true, // Добавляем этот параметр
     },
     breakpoints: {
       767: {
@@ -47,11 +50,12 @@ if (swiperServicesRight) {
         loop: true,
         slidesPerView: 2.4,
         spaceBetween: 26,
-        speed: 4000,
+        speed: 3000,
         autoplay: {
           delay: 0,
           disableOnInteraction: false,
           reverseDirection: true,
+          pauseOnMouseEnter: true, // Добавляем этот параметр
         },
       },
     },

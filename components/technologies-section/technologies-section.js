@@ -1,7 +1,73 @@
-const marqueeWrap = document.querySelector(".marquee-wrap");
+const swiperTechnologiesMerquee = document.querySelector(".swiper-marquee");
 
-if (marqueeWrap) {
-  const marqueeRow = document.querySelector(".marquee-row").offsetWidth;
+if (swiperTechnologiesMerquee) {
+  const swiperTechnologiesMerquee = new Swiper(".swiper-marquee", {
+    // Optional parameters
+    loop: true,
+    slidesPerView: 1.5,
+    spaceBetween: 33,
+    speed: 4000,
+    autoplay: {
+      delay: 0,
+      disableOnInteraction: false,
+    },
 
-  marqueeWrap.style.width = marqueeRow * 2 - 34 + "px";
+    breakpoints: {
+      350: {
+        slidesPerView: 1.8,
+      },
+
+      576: {
+        slidesPerView: 2.5,
+        loop: true,
+        spaceBetween: 33,
+
+        speed: 10000,
+        autoplay: {
+          delay: 0,
+          disableOnInteraction: false,
+        },
+      },
+
+      767: {
+        slidesPerView: 4.5,
+        loop: true,
+        spaceBetween: 33,
+
+        speed: 10000,
+        autoplay: {
+          delay: 0,
+          disableOnInteraction: false,
+        },
+      },
+
+      922: {
+        slidesPerView: 4.5,
+        loop: true,
+        spaceBetween: 33,
+
+        speed: 10000,
+        autoplay: {
+          delay: 0,
+          disableOnInteraction: false,
+        },
+      },
+
+      1150: {
+        slidesPerView: 5.5,
+      },
+
+      1320: {
+        slidesPerView: 6.5,
+        loop: true,
+        spaceBetween: 33,
+
+        speed: 10000,
+        autoplay: {
+          delay: 0,
+          disableOnInteraction: false,
+        },
+      },
+    },
+  });
 }
