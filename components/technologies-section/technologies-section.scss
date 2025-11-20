@@ -50,18 +50,8 @@
   z-index: 3;
 }
 
-.marquee-row {
-  display: flex;
-  gap: 34px;
-  max-width: fit-content;
-}
-
-.marquee-wrap {
-  display: flex;
-  gap: 34px;
-  animation: marquee 25s infinite linear;
-  will-change: transform;
-  backface-visibility: hidden;
+.swiper-marquee .swiper-wrapper {
+  transition-timing-function: linear !important;
 }
 
 .marquee-block {
@@ -96,16 +86,6 @@
 
 .technologies-section .bg-circle-white svg {
   width: 100%;
-}
-
-@keyframes marquee {
-  0% {
-    transform: translateX(0%);
-  }
-
-  100% {
-    transform: translateX(-50%);
-  }
 }
 
 .technologies-section .bg-circle-red {
@@ -177,5 +157,9 @@
   }
   .technologies-wrapper {
     margin-bottom: 24px;
+  }
+
+  .swiper-marquee {
+    padding-bottom: 75px;
   }
 }
