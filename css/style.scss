@@ -657,7 +657,7 @@ object {
   color: var(--accent);
 }
 
-.footer-info-row dl {
+.footer-info-row dd {
   font-weight: 400;
   line-height: 160%;
   color: #fff;
@@ -1156,7 +1156,7 @@ body:has(.popup-form.show) {
   .footer-info-row dt {
     order: 1;
   }
-  .footer-info-row dl {
+  .footer-info-row dd {
     color: var(--subtext);
   }
   .footer-right-blocks {
