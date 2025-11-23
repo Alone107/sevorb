@@ -192,6 +192,7 @@
   }
   .services-block {
     min-width: auto;
+    height: 100%;
   }
   .services-left .services-left-wrap:nth-child(2) {
     display: none;
