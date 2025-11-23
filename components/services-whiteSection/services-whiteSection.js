@@ -9,7 +9,8 @@ if (swiperServicesLeft) {
     waitTransition: false,
 
     autoplay: {
-      delay: 2000,
+      delay: 0,
+      disableOnInteraction: false,
     },
     breakpoints: {
       767: {
