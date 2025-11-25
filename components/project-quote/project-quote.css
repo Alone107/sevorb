@@ -1,0 +1,49 @@
+.project-quote {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+.project-quote blockquote {
+  max-width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 125%;
+  text-align: center;
+  color: var(--text);
+  margin-bottom: 32px;
+}
+
+.project-quote-avatar {
+  max-width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-quote-avatar img {
+  margin-bottom: 32px;
+  width: 64px;
+  height: 64px;
+  border-radius: 100%;
+}
+
+.project-quote-name {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 156%;
+  text-align: center;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+.project-quote-job {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: var(--subtext);
+}/*# sourceMappingURL=project-quote.css.map */

@@ -162,6 +162,19 @@ object {
   width: 100%;
 }
 
+.swiper-button-custom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border: 1px solid var(--text);
+  border-radius: 1000px;
+  background: transparent;
+  cursor: pointer;
+  transition-duration: var(--transition);
+}
+
 .header-search input {
   width: 100%;
   border: 1px solid #2b3b46;

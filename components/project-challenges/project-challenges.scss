@@ -1,0 +1,89 @@
+.project-challenges {
+  position: relative;
+}
+
+.project-challenges-buttons {
+  display: flex;
+  gap: 18px;
+  justify-content: flex-end;
+  margin-bottom: 46px;
+}
+
+.project-challenges-slide {
+  position: relative;
+  padding: 50px;
+  border: 1px solid var(--text);
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.project-challenges-slide h3 {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 125%;
+  color: #fff;
+  margin-bottom: 24px;
+}
+
+.project-challenges-slide p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--subtext);
+  margin-bottom: 24px;
+}
+
+.project-challenges-slide p:last-of-type {
+  margin-bottom: 0;
+}
+
+.project-challenges-slide span {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 125%;
+  color: #fff;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.project-challenges-slide-number {
+  position: absolute;
+  top: 50%;
+  right: -40px;
+  transform: translate(0%, -50%);
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 156px;
+  line-height: 125%;
+  color: var(--accent);
+  opacity: 0.5;
+}
+
+.swiper.swiper-project-challenges {
+  overflow: visible;
+  padding-bottom: 34px;
+}
+
+.project-challenges-circle-red {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 440px;
+  height: 440px;
+  background: var(--accent);
+  filter: blur(190px);
+  z-index: -2;
+  border-radius: 100%;
+}
+
+.project-challenges-circle-white {
+  position: absolute;
+  top: -10%;
+  left: 5%;
+  width: 400px;
+  height: 400px;
+  background: #a3a3a3;
+  filter: blur(190px);
+  border-radius: 100%;
+  z-index: -2;
+}
