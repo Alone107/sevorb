@@ -99,11 +99,14 @@
 
 .project-keyFrames-slider .project-keyFrames-img {
   max-width: 50%;
+<<<<<<< HEAD
   width: auto;
 }
 
 .project-keyFrames-slider .project-keyFrames-img img {
   width: auto;
+=======
+>>>>>>> 6fef2a44c2a836618c4ea591efd3f6b62aadc655
 }
 
 .swiper-keyFrames .swiper-slide {
@@ -112,6 +115,7 @@
 
 .project-keyFrames-img {
   transition-duration: 0.7s;
+<<<<<<< HEAD
   max-width: 50%;
   width: 100%;
 }
@@ -147,6 +151,8 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
+=======
+>>>>>>> 6fef2a44c2a836618c4ea591efd3f6b62aadc655
 }
 
 // -----------frames-1---------------------
@@ -172,17 +178,28 @@
 // -----------frames-2---------------------
 
 .project-keyFrames-2 .project-keyFrames-img {
+<<<<<<< HEAD
   transform: translateX(0%);
   opacity: 0;
 }
 
 .project-keyFrames-2 .project-keyFrames-block {
   transform: translateX(500%);
+=======
+  transform: translateX(100%);
+}
+
+.project-keyFrames-2 .project-keyFrames-block {
+  transform: translateX(-100%);
+>>>>>>> 6fef2a44c2a836618c4ea591efd3f6b62aadc655
 }
 
 .project-keyFrames-2.visible .project-keyFrames-img {
   transform: translateX(0%);
+<<<<<<< HEAD
   opacity: 1;
+=======
+>>>>>>> 6fef2a44c2a836618c4ea591efd3f6b62aadc655
 }
 
 .project-keyFrames-2.visible .project-keyFrames-block {
@@ -194,6 +211,7 @@
 // -----------frames-3---------------------
 
 .project-keyFrames-3 .project-keyFrames-img {
+<<<<<<< HEAD
   transform: translate(-500%, -10%);
 }
 
@@ -207,6 +225,21 @@
 
 .project-keyFrames-3.visible .project-keyFrames-block {
   transform: translate(0%, 0%);
+=======
+  transform: translateX(100%);
+}
+
+.project-keyFrames-3 .project-keyFrames-block {
+  transform: translateX(-100%);
+}
+
+.project-keyFrames-3.visible .project-keyFrames-img {
+  transform: translateX(0%);
+}
+
+.project-keyFrames-3.visible .project-keyFrames-block {
+  transform: translateX(0%);
+>>>>>>> 6fef2a44c2a836618c4ea591efd3f6b62aadc655
 }
 
 // -----------frames-3---------------------
@@ -231,6 +264,7 @@
 
 // -----------frames-4--------------------
 
+<<<<<<< HEAD
 // -----------frames-5---------------------
 
 .project-keyFrames-5 .project-keyFrames-img {
@@ -257,6 +291,8 @@
 
 // -----------frames-5--------------------
 
+=======
+>>>>>>> 6fef2a44c2a836618c4ea591efd3f6b62aadc655
 @media (max-width: 767px) {
   .project-keyFrames-wrapper {
     gap: 32px;
@@ -281,6 +317,7 @@
   .project-keyFrames-3 .project-keyFrames-block {
     padding-left: 16px;
   }
+<<<<<<< HEAD
 
   .keyFrames-blocks {
     padding-left: 0;
@@ -288,4 +325,6 @@
   .project-keyFrames-img {
     max-width: none;
   }
+=======
+>>>>>>> 6fef2a44c2a836618c4ea591efd3f6b62aadc655
 }

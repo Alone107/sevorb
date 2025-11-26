@@ -22,13 +22,18 @@ body {
   height: 100%;
 }
 
+<<<<<<< HEAD
 .wrapper {
+=======
+.page {
+>>>>>>> 6fef2a44c2a836618c4ea591efd3f6b62aadc655
   display: flex;
   flex-direction: column;
   min-height: 100%;
   overflow-x: hidden;
 }
 
+<<<<<<< HEAD
 .wrapper.overflow-none {
   overflow-x: visible;
   -ms-overflow-style: none; /* для IE и Edge */
@@ -40,6 +45,8 @@ body {
   width: 0;
 }
 
+=======
+>>>>>>> 6fef2a44c2a836618c4ea591efd3f6b62aadc655
 main {
   flex-grow: 1;
 }
