@@ -21,11 +21,22 @@ body {
   height: 100%;
 }
 
-.page {
+.wrapper {
   display: flex;
   flex-direction: column;
   min-height: 100%;
   overflow-x: hidden;
+}
+
+.wrapper.overflow-none {
+  overflow-x: visible;
+  -ms-overflow-style: none; /* для IE и Edge */
+  scrollbar-width: none; /* для Firefox */
+}
+
+.wrapper.overflow-none::-webkit-scrollbar {
+  display: none; /* для Chrome, Safari, Opera */
+  width: 0;
 }
 
 main {
