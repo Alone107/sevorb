@@ -532,12 +532,14 @@ object {
 .header-bigMenu .sub-menu {
   animation: fadeOut 0.5s forwards;
   opacity: 0;
+  pointer-events: none;
 }
 
 .header-bigMenu .sub-menu.show {
   display: flex;
   opacity: 1;
   animation: fadeIn 1s forwards;
+  pointer-events: visible;
 }
 
 .header-bigMenu .sub-menu .menu-item a:hover {
