@@ -1,63 +1,151 @@
-.project-videoReview {
-  padding-top: 96px;
-  padding-bottom: 96px;
-  background: #fafafa;
+.project-challenges-buttons {
+  display: flex;
+  gap: 18px;
+  justify-content: flex-end;
+  margin-bottom: 46px;
 }
 
-.project-videoReview-img {
-  text-align: center;
-  margin-bottom: 32px;
+.project-challenges-slide {
+  position: relative;
+  padding: 50px;
+  border: 1px solid var(--text);
+  border-radius: 24px;
+  overflow: hidden;
+  transition-duration: var(--transition);
 }
 
-.project-videoReview video {
-  border-radius: 40px;
-  margin-bottom: 32px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  width: 100%;
-}
-
-.project-videoReview blockquote {
+.project-challenges-slide h3 {
   font-weight: 600;
   font-size: 32px;
   line-height: 125%;
-  text-align: center;
-  color: #181d27;
-  margin-bottom: 32px;
-  max-width: 90%;
-  margin-left: auto;
-  margin-right: auto;
+  color: #fff;
+  margin-bottom: 24px;
 }
 
-.project-videoReview-name {
-  font-family: var(--second-family);
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 156%;
-  text-align: center;
-  color: #181d27;
-  margin-bottom: 4px;
-}
-
-.project-videoReview-job {
-  font-family: var(--second-family);
+.project-challenges-slide p {
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-  text-align: center;
-  color: #535862;
+  color: var(--subtext);
+  margin-bottom: 24px;
+}
+
+.project-challenges-slide p:last-of-type {
+  margin-bottom: 0;
+}
+
+.project-challenges-slide span {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 125%;
+  color: #fff;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.project-challenges-slide-number {
+  position: absolute;
+  top: 50%;
+  right: -40px;
+  transform: translate(0%, -50%);
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 156px;
+  line-height: 125%;
+  color: var(--accent);
+  opacity: 0.5;
+}
+
+.swiper.swiper-project-challenges {
+  overflow: visible;
+  padding-bottom: 34px;
+}
+
+.swiper-slide-active .project-challenges-slide {
+  border-color: var(--accent);
+}
+
+.project-backgroundChallenges {
+  padding-top: 240px;
+  position: relative;
+  padding-bottom: 120px;
+}
+
+.project-backgroundChallenges-circle-white {
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  width: 400px;
+  height: 400px;
+  background: #a3a3a3;
+  filter: blur(190px);
+  z-index: -2;
+}
+
+.project-backgroundChallenges-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 48px;
+}
+
+.project-backgroundChallenges-info {
+  max-width: 870px;
+}
+
+.project-backgroundChallenges-title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 125%;
+  letter-spacing: -0.02em;
+  color: #fff;
+  margin-bottom: 24px;
+}
+
+.project-backgroundChallenges-info p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #fff;
+}
+
+.project-backgroundChallenges-buttons {
+  display: flex;
+  gap: 16px;
+  align-items: flex-end;
+}
+
+.swiper.swiper-project-backgroundChallenges {
+  overflow: visible;
 }
 
 @media (max-width: 767px) {
-  .project-videoReview {
-    padding-top: 48px;
-    padding-bottom: 48px;
+  .project-challenges .container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
   }
-  .project-videoReview blockquote {
-    font-size: 24px;
+  .swiper.swiper-project-challenges {
+    overflow: hidden;
+    width: 100%;
+    padding-bottom: 0;
   }
-  .project-videoReview video {
-    border-radius: 8px;
+  .project-challenges-buttons {
+    order: 1;
+    margin-bottom: 0;
+    justify-content: center;
   }
-}/*# sourceMappingURL=project-videoReview.css.map */
+  .project-backgroundChallenges {
+    padding-top: 72px;
+    position: relative;
+    padding-bottom: 44px;
+  }
+  .project-backgroundChallenges-buttons {
+    display: none;
+  }
+  .project-backgroundChallenges-circle-white {
+    top: -25%;
+    left: -25%;
+  }
+}/*# sourceMappingURL=project-backgroundChallenges.css.map */

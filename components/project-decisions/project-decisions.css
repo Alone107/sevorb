@@ -3,6 +3,22 @@
   padding-bottom: 96px;
 }
 
+.project-decisions.project-decisions-left {
+  padding-top: 60px;
+  padding-bottom: 120px;
+}
+
+.project-decisions-left .project-decisions-title {
+  text-align: left;
+  z-index: 5;
+  position: relative;
+}
+
+.project-decisions-left .project-decisions-wrapper {
+  position: relative;
+  z-index: 5;
+}
+
 .project-decisions-title {
   font-weight: 700;
   font-size: 32px;
@@ -65,5 +81,9 @@
   .project-decisions-title {
     text-align: left;
     text-transform: none;
+  }
+  .project-decisions.project-decisions-left {
+    padding-top: 42px;
+    padding-bottom: 88px;
   }
 }/*# sourceMappingURL=project-decisions.css.map */

@@ -30,6 +30,23 @@
       rel="stylesheet"
       href="components/project-tasks-slider/project-tasks-slider.css"
     />
+    <link
+      rel="stylesheet"
+      href="components/project-dashboard/project-dashboard.css"
+    />
+    <link
+      rel="stylesheet"
+      href="components/project-backgroundChallenges/project-backgroundChallenges.css"
+    />
+    <link
+      rel="stylesheet"
+      href="components/project-featuresV2/project-featuresV2.css"
+    />
+    <link
+      rel="stylesheet"
+      href="components/project-decisions/project-decisions.css"
+    />
+    <link rel="stylesheet" href="components/project-quote/project-quote.css" />
   </head>
   <body>
     <div class="wrapper">
@@ -682,102 +699,120 @@
             </div>
           </div>
           <div class="project-tasks-slider-circle-white"></div>
+          <div class="project-tasks-slider-circle-white-blur"></div>
         </section>
         <section class="project-dashboard">
           <div class="container">
-            <div class="project-dashboard-subtitle">Ключевые экраны</div>
-            <h2 class="project-dashboard-title">Главный дашборд компании</h2>
-            <div class="project-dashboard-buttons">
-              <div
-                class="swiper-button-custom swiper-button-project-dashboard-prev"
-              >
-                <svg
-                  width="16"
-                  height="14"
-                  viewBox="0 0 16 14"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
+            <div class="project-dashboard-wrapper">
+              <div class="project-dashboard-subtitle">Ключевые экраны</div>
+              <h2 class="project-dashboard-title">Главный дашборд компании</h2>
+              <div class="project-dashboard-buttons">
+                <div
+                  class="swiper-button-custom swiper-button-project-dashboard-prev"
                 >
-                  <path
-                    d="M14.4219 6.83496H1.42188M6.42188 0.834961L1.12898 6.12785C0.738458 6.51838 0.738458 7.15154 1.12898 7.54207L6.42188 12.835"
-                    stroke="#F9F9F9"
-                    stroke-width="1.67"
-                    stroke-linecap="round"
-                  />
-                </svg>
+                  <svg
+                    width="16"
+                    height="14"
+                    viewBox="0 0 16 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14.4219 6.83496H1.42188M6.42188 0.834961L1.12898 6.12785C0.738458 6.51838 0.738458 7.15154 1.12898 7.54207L6.42188 12.835"
+                      stroke="#0A1D2A"
+                      stroke-width="1.67"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="swiper-button-custom swiper-button-project-dashboard-next"
+                >
+                  <svg
+                    width="16"
+                    height="14"
+                    viewBox="0 0 16 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0.835938 6.83496H13.8359M8.83594 0.834961L14.1288 6.12785C14.5194 6.51838 14.5194 7.15154 14.1288 7.54207L8.83594 12.835"
+                      stroke="#0A1D2A"
+                      stroke-width="1.67"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+
+              <!-- Slider main container -->
+              <div class="swiper swiper-project-dashboard">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <div class="project-dashboard-img project-dashboard-img-2">
+                      <img
+                        src="images/project-dashboard/Macbook Pro 16 mockup.png"
+                        alt=""
+                      />
+                      <div class="project-dashboard-img-video">
+                        <video
+                          controls
+                          src="images/project-videoReview/video.mp4"
+                          poster="images/project-videoReview/Video placeholder.png"
+                        ></video>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="project-dashboard-img">
+                      <img src="images/project-dashboard/Content.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="project-dashboard-img">
+                      <img
+                        src="images/project-dashboard/3_2 screen mockup.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="project-dashboard-tags">
+                <div
+                  data-dashboard-block="0"
+                  class="project-dashboard-tag-block active"
+                >
+                  <div class="project-dashboard-tag">Цели компании</div>
+                  <div class="project-dashboard-tag">Общий прогресс</div>
+                  <div class="project-dashboard-tag">Ключевые метрики</div>
+                </div>
+                <div
+                  data-dashboard-block="1"
+                  class="project-dashboard-tag-block"
+                >
+                  <div class="project-dashboard-tag">
+                    Cписок целей подразделения
+                  </div>
+                  <div class="project-dashboard-tag">
+                    Привязка к целям компании
+                  </div>
+                </div>
+                <div
+                  data-dashboard-block="2"
+                  class="project-dashboard-tag-block"
+                >
+                  <div class="project-dashboard-tag">Личные OKR/KPI</div>
+                  <div class="project-dashboard-tag">Процент выполнения</div>
+                  <div class="project-dashboard-tag">Дедлайны</div>
+                </div>
               </div>
               <div
-                class="swiper-button-custom swiper-button-project-dashboard-next"
-              >
-                <svg
-                  width="16"
-                  height="14"
-                  viewBox="0 0 16 14"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M0.835938 6.83496H13.8359M8.83594 0.834961L14.1288 6.12785C14.5194 6.51838 14.5194 7.15154 14.1288 7.54207L8.83594 12.835"
-                    stroke="#F9F9F9"
-                    stroke-width="1.67"
-                    stroke-linecap="round"
-                  />
-                </svg>
-              </div>
+                class="swiper-pagination swiper-pagination-project-dashboard"
+              ></div>
             </div>
-
-            <!-- Slider main container -->
-            <div class="swiper">
-              <!-- Additional required wrapper -->
-              <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide">
-                  <div class="project-dashboard-img">
-                    <img
-                      src="images/project-dashboard/Macbook Pro 16 mockup.png"
-                      alt=""
-                    />
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="project-dashboard-img">
-                    <img src="images/project-dashboard/Content.png" alt="" />
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="project-dashboard-img">
-                    <img
-                      src="images/project-dashboard/3_2 screen mockup.png"
-                      alt=""
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="project-dashboard-tags">
-              <div data-dashboard-block="0" class="project-dashboard-tag-block">
-                <div class="project-dashboard-tag">Цели компании</div>
-                <div class="project-dashboard-tag">Общий прогресс</div>
-                <div class="project-dashboard-tag">Ключевые метрики</div>
-              </div>
-              <div data-dashboard-block="1" class="project-dashboard-tag-block">
-                <div class="project-dashboard-tag">
-                  Cписок целей подразделения
-                </div>
-                <div class="project-dashboard-tag">
-                  Привязка к целям компании
-                </div>
-              </div>
-              <div data-dashboard-block="2" class="project-dashboard-tag-block">
-                <div class="project-dashboard-tag">Личные OKR/KPI</div>
-                <div class="project-dashboard-tag">Процент выполнения</div>
-                <div class="project-dashboard-tag">Дедлайны</div>
-              </div>
-            </div>
-            <div
-              class="swiper-pagination swiper-pagination-project-dashboard"
-            ></div>
           </div>
         </section>
         <section class="project-backgroundChallenges">
@@ -832,7 +867,7 @@
               </div>
             </div>
 
-            <div class="swiper project-backgroundChallenges">
+            <div class="swiper swiper-project-backgroundChallenges">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="project-challenges-slide">
@@ -936,6 +971,7 @@
             </div>
           </div>
           <div class="project-featuresV2-circle-red"></div>
+          <div class="project-featuresV2-circle-white"></div>
         </section>
         <section class="project-decisions project-decisions-left">
           <div class="container">
@@ -1264,5 +1300,7 @@
 
   <script src="js/choices.min.js"></script>
   <script src="components/project-tasks-slider/project-tasks-slider.js"></script>
+  <script src="components/project-dashboard/project-dashboard.js"></script>
+  <script src="components/project-backgroundChallenges/project-backgroundChallenges.js"></script>
   <script src="js/main.js"></script>
 </html>

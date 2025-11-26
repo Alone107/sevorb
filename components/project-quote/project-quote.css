@@ -3,6 +3,10 @@
   padding-bottom: 96px;
 }
 
+.project-quote.project-quote-white {
+  background: #fafafa;
+}
+
 .project-quote blockquote {
   max-width: 95%;
   margin-left: auto;
@@ -13,6 +17,14 @@
   text-align: center;
   color: var(--text);
   margin-bottom: 32px;
+}
+
+.project-quote-white.project-quote blockquote {
+  color: #181d27;
+}
+
+.project-quote-white .project-quote-name {
+  color: #181d27;
 }
 
 .project-quote-avatar {
@@ -56,5 +68,9 @@
   .project-quote blockquote {
     max-width: none;
     font-size: 24px;
+  }
+  .project-quote.project-quote-white {
+    padding-top: 48px;
+    padding-bottom: 48px;
   }
 }/*# sourceMappingURL=project-quote.css.map */
