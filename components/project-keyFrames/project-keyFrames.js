@@ -11,7 +11,6 @@ if (swiperKeyFrames) {
   });
 }
 
-<<<<<<< HEAD
 const listKeyframes = document.querySelectorAll(".project-keyFrames-wrapper");
 if (listKeyframes) {
   listKeyframes.forEach((keyframe) => {
@@ -72,35 +71,5 @@ if (listKeyframes) {
 
     // Проверяем видимость при загрузке страницы
     document.addEventListener("DOMContentLoaded", handleScroll);
-=======
-const listKeyrames = document.querySelectorAll(".project-keyFrames-wrapper");
-if (listKeyrames) {
-  listKeyrames.forEach((keyFrames) => {
-    function isElementVisible(keyFrames) {
-      const rect = keyFrames.getBoundingClientRect();
-      const windowHeight = window.innerHeight;
-
-      // Проверяем, что весь блок виден на экране
-      return (
-        rect.top >= 0 && // верхняя часть блока видна
-        rect.bottom <= windowHeight && // нижняя часть блока видна
-        rect.width === keyFrames.offsetWidth // ширина не обрезана
-      );
-    }
-
-    function handleScroll() {
-      if (isElementVisible(keyFrames)) {
-        keyFrames.classList.add("visible");
-      }
-    }
-
-    // Добавляем обработчик события скролла
-    window.addEventListener("scroll", handleScroll);
-
-    // Проверяем при загрузке страницы
-    document.addEventListener("DOMContentLoaded", () => {
-      handleScroll();
-    });
->>>>>>> 6fef2a44c2a836618c4ea591efd3f6b62aadc655
   });
 }
