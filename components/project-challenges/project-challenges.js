@@ -5,8 +5,15 @@ const swiperProjectChallenges = document.querySelector(
 if (swiperProjectChallenges) {
   const swiperProjectChallenges = new Swiper(".swiper-project-challenges", {
     // Optional parameters
-    slidesPerView: 1.5,
+    slidesPerView: 1,
     spaceBetween: 48,
+
+    breakpoints: {
+      992: {
+        slidesPerView: 1.5,
+        spaceBetween: 48,
+      },
+    },
 
     // Navigation arrows
     navigation: {

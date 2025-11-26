@@ -46,4 +46,15 @@
   line-height: 150%;
   text-align: center;
   color: var(--subtext);
+}
+
+@media (max-width: 767px) {
+  .project-quote {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .project-quote blockquote {
+    max-width: none;
+    font-size: 24px;
+  }
 }/*# sourceMappingURL=project-quote.css.map */

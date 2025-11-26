@@ -1,73 +1,43 @@
-const swiperTechnologiesMerquee = document.querySelector(".swiper-marquee");
+const swiperKeyFrames = document.querySelector(".swiper-keyFrames");
 
-if (swiperTechnologiesMerquee) {
-  const swiperTechnologiesMerquee = new Swiper(".swiper-marquee", {
+if (swiperKeyFrames) {
+  const swiperKeyFrames = new Swiper(".swiper-keyFrames", {
     // Optional parameters
-    loop: true,
-    slidesPerView: 1.5,
-    spaceBetween: 33,
-    speed: 4000,
-    autoplay: {
-      delay: 0,
-      disableOnInteraction: false,
-    },
 
-    breakpoints: {
-      350: {
-        slidesPerView: 1.8,
-      },
+    spaceBetween: 24,
+    slidesPerView: 2.5,
+    freeMode: true,
+    grabCursor: true,
+  });
+}
 
-      576: {
-        slidesPerView: 2.5,
-        loop: true,
-        spaceBetween: 33,
+const listKeyrames = document.querySelectorAll(".project-keyFrames-wrapper");
+if (listKeyrames) {
+  listKeyrames.forEach((keyFrames) => {
+    function isElementVisible(keyFrames) {
+      const rect = keyFrames.getBoundingClientRect();
+      const windowHeight = window.innerHeight;
 
-        speed: 10000,
-        autoplay: {
-          delay: 0,
-          disableOnInteraction: false,
-        },
-      },
+      // Проверяем, что весь блок виден на экране
+      return (
+        rect.top >= 0 && // верхняя часть блока видна
+        rect.bottom <= windowHeight && // нижняя часть блока видна
+        rect.width === keyFrames.offsetWidth // ширина не обрезана
+      );
+    }
 
-      767: {
-        slidesPerView: 4.5,
-        loop: true,
-        spaceBetween: 33,
+    function handleScroll() {
+      if (isElementVisible(keyFrames)) {
+        keyFrames.classList.add("visible");
+      }
+    }
 
-        speed: 10000,
-        autoplay: {
-          delay: 0,
-          disableOnInteraction: false,
-        },
-      },
+    // Добавляем обработчик события скролла
+    window.addEventListener("scroll", handleScroll);
 
-      922: {
-        slidesPerView: 4.5,
-        loop: true,
-        spaceBetween: 33,
-
-        speed: 10000,
-        autoplay: {
-          delay: 0,
-          disableOnInteraction: false,
-        },
-      },
-
-      1150: {
-        slidesPerView: 5.5,
-      },
-
-      1320: {
-        slidesPerView: 6.5,
-        loop: true,
-        spaceBetween: 33,
-
-        speed: 10000,
-        autoplay: {
-          delay: 0,
-          disableOnInteraction: false,
-        },
-      },
-    },
+    // Проверяем при загрузке страницы
+    document.addEventListener("DOMContentLoaded", () => {
+      handleScroll();
+    });
   });
 }

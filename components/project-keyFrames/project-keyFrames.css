@@ -26,6 +26,7 @@
 
 .project-keyFrames-block {
   max-width: 600px;
+  transition-duration: 0.7s;
 }
 
 .project-keyFrames-block-icon {
@@ -84,6 +85,8 @@
   justify-content: center;
   border-radius: 14px;
   background: #f4ebff;
+  width: 28px;
+  height: 28px;
 }
 
 .project-keyFrames-2 .project-keyFrames-block {
@@ -92,4 +95,107 @@
 
 .project-keyFrames-3 .project-keyFrames-block {
   padding-left: 52px;
+}
+
+.project-keyFrames-slider .project-keyFrames-img {
+  max-width: 50%;
+}
+
+.swiper-keyFrames .swiper-slide {
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+
+.project-keyFrames-img {
+  transition-duration: 0.7s;
+}
+
+.project-keyFrames-1 .project-keyFrames-img {
+  transform: translateX(-100%);
+}
+
+.project-keyFrames-1 .project-keyFrames-block {
+  transform: translateX(100%);
+}
+
+.project-keyFrames-1.visible .project-keyFrames-img {
+  transform: translateX(0%);
+}
+
+.project-keyFrames-1.visible .project-keyFrames-block {
+  transform: translateX(0%);
+}
+
+.project-keyFrames-2 .project-keyFrames-img {
+  transform: translateX(100%);
+}
+
+.project-keyFrames-2 .project-keyFrames-block {
+  transform: translateX(-100%);
+}
+
+.project-keyFrames-2.visible .project-keyFrames-img {
+  transform: translateX(0%);
+}
+
+.project-keyFrames-2.visible .project-keyFrames-block {
+  transform: translateX(0%);
+}
+
+.project-keyFrames-3 .project-keyFrames-img {
+  transform: translateX(100%);
+}
+
+.project-keyFrames-3 .project-keyFrames-block {
+  transform: translateX(-100%);
+}
+
+.project-keyFrames-3.visible .project-keyFrames-img {
+  transform: translateX(0%);
+}
+
+.project-keyFrames-3.visible .project-keyFrames-block {
+  transform: translateX(0%);
+}
+
+.project-keyFrames-4 .project-keyFrames-img {
+  transform: translateX(-100%);
+}
+
+.project-keyFrames-4 .project-keyFrames-block {
+  transform: translateX(100%);
+}
+
+.project-keyFrames-4.visible .project-keyFrames-img {
+  transform: translateX(0%);
+}
+
+.project-keyFrames-4.visible .project-keyFrames-block {
+  transform: translateX(0%);
+}
+
+@media (max-width: 767px) {
+  .project-keyFrames-wrapper {
+    gap: 32px;
+    flex-direction: column;
+  }
+  .project-keyFrames-block {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .project-keyFrames-1 .project-keyFrames-block {
+    padding-right: 16px;
+  }
+  .project-keyFrames-2 .project-keyFrames-block {
+    padding-left: 16px;
+  }
+  .project-keyFrames-slider .project-keyFrames-img {
+    max-width: 100%;
+  }
+  .project-keyFrames {
+    gap: 60px;
+  }
+  .project-keyFrames-3 .project-keyFrames-block {
+    padding-left: 16px;
+  }
 }/*# sourceMappingURL=project-keyFrames.css.map */

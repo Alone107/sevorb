@@ -15,6 +15,7 @@
   border: 1px solid var(--text);
   border-radius: 24px;
   overflow: hidden;
+  transition-duration: var(--transition);
 }
 
 .project-challenges-slide h3 {
@@ -66,7 +67,7 @@
 
 .project-challenges-circle-red {
   position: absolute;
-  bottom: 0;
+  bottom: -20%;
   right: 0;
   width: 440px;
   height: 440px;
@@ -74,6 +75,7 @@
   filter: blur(190px);
   z-index: -2;
   border-radius: 100%;
+  animation: ScaleRedCircle 15s linear infinite;
 }
 
 .project-challenges-circle-white {
@@ -86,4 +88,50 @@
   filter: blur(190px);
   border-radius: 100%;
   z-index: -2;
+}
+
+.swiper-slide-active .project-challenges-slide {
+  border-color: var(--accent);
+}
+
+@keyframes ScaleRedCircle {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.8);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 767px) {
+  .project-challenges .container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .swiper.swiper-project-challenges {
+    overflow: hidden;
+    width: 100%;
+    padding-bottom: 0;
+  }
+
+  .project-challenges-buttons {
+    order: 1;
+    margin-bottom: 0;
+    justify-content: center;
+  }
+  .project-challenges-circle-red {
+    display: none;
+  }
+  .project-challenges-circle-white {
+    width: 350px;
+    height: 350px;
+    left: -50%;
+    top: -25%;
+  }
 }
