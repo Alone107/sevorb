@@ -97,18 +97,6 @@
   animation: moveRedCircle 20s linear infinite;
 }
 
-.project-services-circle-white {
-  position: absolute;
-  bottom: 0;
-  right: -10%;
-  border-radius: 100%;
-  background: #a3a3a3;
-  filter: blur(190px);
-  width: 400px;
-  height: 400px;
-  z-index: -2;
-}
-
 @keyframes moveRedCircle {
   0% {
     transform: translate(0%, 0%);
