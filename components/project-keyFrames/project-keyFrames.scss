@@ -172,28 +172,17 @@
 // -----------frames-2---------------------
 
 .project-keyFrames-2 .project-keyFrames-img {
-<<<<<<< HEAD
   transform: translateX(0%);
   opacity: 0;
 }
 
 .project-keyFrames-2 .project-keyFrames-block {
   transform: translateX(500%);
-=======
-  transform: translateX(100%);
-}
-
-.project-keyFrames-2 .project-keyFrames-block {
-  transform: translateX(-100%);
->>>>>>> 6fef2a44c2a836618c4ea591efd3f6b62aadc655
 }
 
 .project-keyFrames-2.visible .project-keyFrames-img {
   transform: translateX(0%);
-<<<<<<< HEAD
   opacity: 1;
-=======
->>>>>>> 6fef2a44c2a836618c4ea591efd3f6b62aadc655
 }
 
 .project-keyFrames-2.visible .project-keyFrames-block {
