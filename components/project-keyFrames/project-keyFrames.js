@@ -45,7 +45,11 @@ if (listKeyframes) {
       if (isElementPartiallyVisible(keyframe, threshold)) {
         keyframe.classList.add("visible");
 
-        if (keyframe.classList.contains("project-keyFrames-5")) {
+        const mediaQuery = window.matchMedia("(min-width: 767px)");
+        if (
+          keyframe.classList.contains("project-keyFrames-5") &&
+          mediaQuery.matches
+        ) {
           const wrapper = document.querySelector(".wrapper");
           wrapper.classList.add("overflow-none");
         }

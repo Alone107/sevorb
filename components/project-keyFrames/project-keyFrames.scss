@@ -288,4 +288,14 @@
   .project-keyFrames-img {
     max-width: none;
   }
+
+  .project-keyFrames-5 .project-keyFrames-img {
+    display: flex;
+    justify-content: center;
+  }
+
+  .keyFrames-wrapper {
+    position: relative;
+    top: auto;
+  }
 }
