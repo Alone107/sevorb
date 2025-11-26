@@ -269,4 +269,12 @@
   .project-keyFrames-img {
     max-width: none;
   }
-} /*# sourceMappingURL=project-keyFrames.css.map */
+  .project-keyFrames-5 .project-keyFrames-img {
+    display: flex;
+    justify-content: center;
+  }
+  .keyFrames-wrapper {
+    position: relative;
+    top: auto;
+  }
+}/*# sourceMappingURL=project-keyFrames.css.map */
