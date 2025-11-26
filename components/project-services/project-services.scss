@@ -29,6 +29,10 @@
   align-items: center;
 }
 
+.project-services-row:hover .project-services-row-arrow {
+  background: var(--accent);
+}
+
 .project-services-row-arrow {
   display: flex;
   align-items: center;
@@ -36,6 +40,7 @@
   padding: 8px 12px;
   border-radius: 135px;
   background: #2f3f4e;
+  transition-duration: var(--transition);
 }
 
 .project-services-row span {
@@ -89,6 +94,7 @@
   width: 440px;
   height: 440px;
   z-index: -2;
+  animation: moveRedCircle 20s linear infinite;
 }
 
 .project-services-circle-white {
@@ -101,4 +107,92 @@
   width: 400px;
   height: 400px;
   z-index: -2;
+}
+
+@keyframes moveRedCircle {
+  0% {
+    transform: translate(0%, 0%);
+  }
+
+  10% {
+    transform: translate(20%, 0%);
+  }
+
+  20% {
+    transform: translate(20%, 20%);
+  }
+
+  30% {
+    transform: translate(30%, 20%);
+  }
+
+  35% {
+    transform: translate(30%, 50%);
+  }
+
+  40% {
+    transform: translate(30%, 50%);
+  }
+
+  50% {
+    transform: translate(-25%, 50%);
+  }
+
+  60% {
+    transform: translate(-10%, 50%);
+  }
+
+  70% {
+    transform: translate(-10%, -30%);
+  }
+
+  80% {
+    transform: translate(-30%, -30%);
+  }
+
+  90% {
+    transform: translate(-15%, -15%);
+  }
+
+  100% {
+    transform: translate(0%, 0%);
+  }
+}
+
+@media (max-width: 767px) {
+  .project-services-row-arrow {
+    padding: 4px 8px;
+  }
+  .project-services-row span {
+    font-size: 18px;
+  }
+  .project-services-technologies-block img {
+    max-width: 64px;
+  }
+  .project-services-technologies-wrap {
+    gap: 42px;
+    width: 100%;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* Для Firefox */
+    scrollbar-width: none;
+  }
+  .project-services-technologies-block {
+    scroll-snap-align: start;
+  }
+  .project-services-circle-red {
+    display: none;
+  }
+  .project-services-circle-white {
+    width: 350px;
+    height: 350px;
+    bottom: -30%;
+    right: -50%;
+  }
 }

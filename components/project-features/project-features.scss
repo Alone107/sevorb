@@ -45,3 +45,39 @@
 .project-features-gif img {
   width: 100%;
 }
+
+@media (max-width: 767px) {
+  .project-features {
+    position: relative;
+    padding-top: 0;
+    padding-bottom: 46px;
+  }
+  .project-features-circle-red {
+    position: absolute;
+    right: -40%;
+    top: 10%;
+    width: 400px;
+    height: 400px;
+    border-radius: 100%;
+    background: var(--accent);
+    filter: blur(190px);
+    z-index: -2;
+  }
+  .project-features-gif {
+    display: none;
+  }
+  .project-features-list {
+    max-width: none;
+    gap: 36px;
+  }
+  .project-features-list li {
+    padding: 8px 12px;
+  }
+
+  .project-features-title {
+    font-weight: 700;
+    text-align: left;
+    text-transform: none;
+    letter-spacing: -0.02em;
+  }
+}

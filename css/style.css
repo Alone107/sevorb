@@ -173,6 +173,19 @@ object {
   transition-duration: var(--transition);
 }
 
+.swiper-button-custom path {
+  transition-duration: var(--transition);
+}
+
+.swiper-button-custom:hover {
+  border-color: var(--backgrond);
+  background: #a0a7ba;
+}
+
+.swiper-button-custom:hover path {
+  stroke: #0a1d2a;
+}
+
 .header-search input {
   width: 100%;
   border: 1px solid #2b3b46;
