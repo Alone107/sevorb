@@ -172,6 +172,9 @@ if (popupForm) {
 const headerSearch = document.querySelector(".header-search input");
 const bigMenuSearch = document.querySelector(".header-bigMenu-search");
 const SearchButton = document.querySelector(".header-search button");
+const headerSearchRow = document.querySelector(".header-search");
+const headerLogo = document.querySelector(".header-logo");
+const headerBurger = document.querySelector(".burger");
 
 // Проверяем существование всех необходимых элементов
 if (headerSearch && bigMenuSearch && SearchButton) {
@@ -182,8 +185,9 @@ if (headerSearch && bigMenuSearch && SearchButton) {
   mediaQuery.addEventListener("change", (e) => {
     if (!e.matches) {
       // При большом экране сбрасываем стили
-      headerSearch.style.opacity = "";
-      SearchButton.style.right = "";
+      headerSearchRow.classList.remove("show");
+      headerLogo.classList.remove("none");
+      headerBurger.classList.remove("none");
     }
   });
 
@@ -200,8 +204,9 @@ if (headerSearch && bigMenuSearch && SearchButton) {
   SearchButton.addEventListener("click", (e) => {
     if (mediaQuery.matches) {
       e.preventDefault();
-      headerSearch.style.opacity = 1;
-      SearchButton.style.right = "15px";
+      headerSearchRow.classList.toggle("show");
+      headerLogo.classList.toggle("none");
+      headerBurger.classList.toggle("none");
     }
   });
 }
