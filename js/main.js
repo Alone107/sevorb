@@ -167,3 +167,26 @@ if (popupForm) {
     popupForm.classList.remove("show");
   });
 }
+
+const headerSearch = document.querySelector(".header-search input");
+
+if (headerSearch) {
+  const bigMenuSearch = document.querySelector(".header-bigMenu-search");
+  const SearchButton = document.querySelector(".header-search button");
+  const mediaQuery = window.matchMedia("(max-width: 768px)");
+
+  headerSearch.addEventListener("input", () => {
+    if (headerSearch.value) {
+      bigMenuSearch.classList.add("show");
+    } else {
+      bigMenuSearch.classList.remove("show");
+    }
+  });
+  SearchButton.addEventListener("click", (e) => {
+    if (mediaQuery) {
+      e.preventDefault();
+      headerSearch.style.opacity = 1;
+      SearchButton.style.right = 15 + "px";
+    }
+  });
+}
