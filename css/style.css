@@ -649,8 +649,9 @@ object {
   transform: translateY(0%);
   height: auto;
   padding-top: 10px;
-  margin-top: 10px;
+  margin-top: 5px;
   padding-bottom: 72px;
+  width: 100%;
 }
 
 .header-search-title {
@@ -1307,6 +1308,7 @@ body:has(.popup-form.show) {
   .header-search input {
     min-width: auto;
     opacity: 0;
+    padding-left: 18px;
   }
   .header-search button {
     left: auto;
