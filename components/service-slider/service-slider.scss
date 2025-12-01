@@ -1,0 +1,145 @@
+.service-slider {
+  padding-top: 100px;
+  padding-bottom: 92px;
+  background: #edeef4;
+}
+
+.service-slider-title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 125%;
+  letter-spacing: -0.02em;
+  color: #020c24;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--accent);
+  margin-bottom: 24px;
+}
+
+.service-slider-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #000;
+  margin-bottom: 48px;
+  max-width: 85%;
+}
+
+.service-slider-wrapper {
+  padding-top: 24px;
+}
+
+.service-slider-slide {
+  position: relative;
+  border-radius: 24px;
+  padding: 48px 33px;
+  background: var(--backgrond);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  height: 100%;
+}
+
+.service-slider-slide-info {
+  max-width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.service-slider-slide-info-title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 125%;
+  color: var(--text);
+  margin-bottom: 48px;
+}
+
+.service-slider-slide-info-description {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--subtext);
+  margin-bottom: 64px;
+}
+
+.service-slider-slide-bg {
+  position: absolute;
+  max-width: 50%;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: lighten;
+}
+
+.service-slider-slide-bg img {
+  width: 100%;
+  height: 100%;
+}
+
+.service-slider-buttons {
+  margin-top: 24px;
+  display: flex;
+  gap: 18px;
+  justify-content: flex-end;
+}
+
+.service-slider-buttons .swiper-button-custom {
+  border-color: var(--backgrond);
+}
+
+.service-slider-buttons .swiper-button-custom path {
+  stroke: var(--backgrond);
+}
+
+.swiper-service-slider .swiper-slide {
+  height: auto;
+}
+
+.service-grid-padding {
+  padding-top: 120px;
+}
+
+@media (max-width: 767px) {
+  .service-slider {
+    padding-top: 48px;
+  }
+
+  .service-slider-title {
+    font-size: 24px;
+  }
+  .service-slider-slide-info,
+  .service-slider-slide-bg {
+    max-width: none;
+  }
+  .service-slider-slide-bg {
+    display: flex;
+    align-items: flex-end;
+  }
+  .service-slider-slide-bg img {
+    width: auto;
+    height: 100%;
+    max-height: 60%;
+  }
+  .service-slider-text {
+    margin-bottom: 24px;
+  }
+
+  .service-grid-padding .service-grid-circle-red {
+    bottom: auto;
+    top: 0;
+  }
+  .service-grid-padding .service-grid-circle-white {
+    top: 50%;
+  }
+  .service-grid-padding {
+    padding-top: 72px;
+  }
+
+  .service-slider {
+    padding-bottom: 48px;
+  }
+}
