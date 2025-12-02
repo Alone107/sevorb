@@ -6,8 +6,8 @@ if (languageArrow) {
   // Существующий обработчик клика по стрелке
   languageUse.addEventListener("click", (event) => {
     event.stopPropagation(); // Предотвращаем всплытие события
-    languageMenu.classList.toggle("show");
-    languageArrow.classList.toggle("show");
+    languageMenu.classList.toggle("showw");
+    languageArrow.classList.toggle("showw");
   });
 
   // Добавляем обработчик для закрытия при клике вне меню
@@ -16,8 +16,8 @@ if (languageArrow) {
       !languageMenu.contains(event.target) &&
       !languageArrow.contains(event.target)
     ) {
-      languageMenu.classList.remove("show");
-      languageArrow.classList.remove("show");
+      languageMenu.classList.remove("showw");
+      languageArrow.classList.remove("showw");
     }
   });
 }

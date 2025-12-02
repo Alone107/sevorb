@@ -131,6 +131,71 @@
   border-radius: 12px;
 }
 
+.project-dashboard-img.project-dashboard-img-4 {
+  border: 4px solid #181d27;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  max-width: 64%;
+  max-height: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-dashboard-img.project-dashboard-img-4 video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-dashboard-img.project-dashboard-img-3 {
+  border: 4px solid #181d27;
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-dashboard-img-2 .project-dashboard-img-video {
+  max-width: 66%;
+}
+
+.project-dashboard-img.project-dashboard-img-3 video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-dashboard-iphone {
+  overflow: hidden;
+  max-width: 15vw;
+  max-height: 31vw;
+  height: 100%;
+  position: absolute;
+  bottom: 0%;
+  left: 5%;
+}
+
+.project-dashboard-iphone video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-width: 96%;
+  max-height: 99%;
+  border-radius: 2vw;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.project-dashboard-iphone-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
 @media (max-width: 1280px) {
   .project-dashboard-img-2 img {
     object-fit: inherit;

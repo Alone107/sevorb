@@ -273,7 +273,7 @@ object {
   left: 0;
 }
 
-.language-menu.show {
+.language-menu.showw {
   opacity: 1;
   visibility: visible;
   pointer-events: visible;
@@ -327,6 +327,7 @@ object {
 .header-menu {
   display: flex;
   gap: 32px;
+  align-items: center;
 }
 
 .header-nav {

@@ -43,6 +43,7 @@
 .about-hero-right-gif {
   mix-blend-mode: lighten;
   margin-top: -30%;
+  pointer-events: none;
 }
 
 .about-hero-right-gif img {
