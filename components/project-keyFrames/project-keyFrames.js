@@ -1,13 +1,13 @@
-const swiperKeyFrames = document.querySelector(".swiper-keyFrames");
+const swiperKeyFrames = document.querySelectorAll(".swiper-keyFrames");
 
 if (swiperKeyFrames) {
-  const swiperKeyFrames = new Swiper(".swiper-keyFrames", {
-    // Optional parameters
-
-    spaceBetween: 24,
-    slidesPerView: 2.5,
-    freeMode: true,
-    grabCursor: true,
+  swiperKeyFrames.forEach((sliderElement) => {
+    const sliderInstance = new Swiper(sliderElement, {
+      spaceBetween: 24,
+      slidesPerView: 2.5,
+      freeMode: true,
+      grabCursor: true,
+    });
   });
 }
 

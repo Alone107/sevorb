@@ -1,23 +1,23 @@
-const swiperCase = document.querySelector(".swiper-case");
+const swiperCase = document.querySelectorAll(".swiper-case");
 
 if (swiperCase) {
-  const swiperCase = new Swiper(".swiper-case", {
-    // Optional parameters
-    // loop: true,
-    slidesPerView: 1,
-    spaceBetween: 24,
+  swiperCase.forEach((sliderElement) => {
+    const sliderInstance = new Swiper(sliderElement, {
+      // loop: true,
+      slidesPerView: 1,
+      spaceBetween: 24,
 
-    breakpoints: {
-      767: {
-        slidesPerView: 1.4,
-        spaceBetween: 24,
+      breakpoints: {
+        767: {
+          slidesPerView: 1.4,
+          spaceBetween: 24,
+        },
       },
-    },
 
-    // Navigation arrows
-    navigation: {
-      nextEl: ".swiper-button-case-next",
-      prevEl: ".swiper-button-case-prev",
-    },
+      navigation: {
+        nextEl: sliderElement.querySelector(".swiper-button-case-next"),
+        prevEl: sliderElement.querySelector(".swiper-button-case-prev"),
+      },
+    });
   });
 }

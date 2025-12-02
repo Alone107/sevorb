@@ -1,11 +1,10 @@
-const swiperBackgroundChallenges = document.querySelector(
+const swiperBackgroundChallenges = document.querySelectorAll(
   ".swiper-project-backgroundChallenges"
 );
 
 if (swiperBackgroundChallenges) {
-  const swiperBackgroundChallenges = new Swiper(
-    ".swiper-project-backgroundChallenges",
-    {
+  swiperBackgroundChallenges.forEach((sliderElement) => {
+    const sliderInstance = new Swiper(sliderElement, {
       // Optional parameters
       slidesPerView: 1,
       spaceBetween: 48,
@@ -17,11 +16,14 @@ if (swiperBackgroundChallenges) {
         },
       },
 
-      // Navigation arrows
       navigation: {
-        nextEl: ".swiper-button-project-backgroundChallenges-next",
-        prevEl: ".swiper-button-project-backgroundChallenges-prev",
+        nextEl: sliderElement.querySelector(
+          ".swiper-button-project-backgroundChallenges-next"
+        ),
+        prevEl: sliderElement.querySelector(
+          ".swiper-button-project-backgroundChallenges-prev"
+        ),
       },
-    }
-  );
+    });
+  });
 }

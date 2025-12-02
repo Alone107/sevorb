@@ -1,24 +1,28 @@
-const swiperProjectChallenges = document.querySelector(
+const swiperProjectChallenges = document.querySelectorAll(
   ".swiper-project-challenges"
 );
 
 if (swiperProjectChallenges) {
-  const swiperProjectChallenges = new Swiper(".swiper-project-challenges", {
-    // Optional parameters
-    slidesPerView: 1,
-    spaceBetween: 48,
+  swiperProjectChallenges.forEach((sliderElement) => {
+    const sliderInstance = new Swiper(sliderElement, {
+      slidesPerView: 1,
+      spaceBetween: 48,
 
-    breakpoints: {
-      992: {
-        slidesPerView: 1.5,
-        spaceBetween: 48,
+      breakpoints: {
+        992: {
+          slidesPerView: 1.5,
+          spaceBetween: 48,
+        },
       },
-    },
 
-    // Navigation arrows
-    navigation: {
-      nextEl: ".swiper-button-project-challenges-next",
-      prevEl: ".swiper-button-project-challenges-prev",
-    },
+      navigation: {
+        nextEl: sliderElement.querySelector(
+          ".swiper-button-project-challenges-next"
+        ),
+        prevEl: sliderElement.querySelector(
+          ".swiper-button-project-challenges-prev"
+        ),
+      },
+    });
   });
 }
