@@ -77,9 +77,15 @@
   height: 56px;
   border-radius: 100%;
   border: 1px solid var(--text);
+  transition-duration: 0.7s;
+  flex-shrink: 0;
 }
 
-.accordion-arrow img {
+.accordion-arrow path {
+  transition-duration: 0.7s;
+}
+
+.accordion-arrow svg {
   transition-duration: 0.7s;
 }
 
@@ -97,6 +103,7 @@
   opacity: 0;
   transition-duration: 0.3s;
   height: 100%;
+  pointer-events: none;
 }
 
 .accordion-content-bg img {
@@ -142,7 +149,7 @@
   -webkit-text-fill-color: var(--accent);
 }
 
-.accordion-details[open] .accordion-arrow img {
+.accordion-details[open] .accordion-arrow svg {
   transform: rotate(-90deg);
 }
 
@@ -162,6 +169,15 @@
 
 .accordion-details:hover .accordion-title {
   color: var(--accent);
+}
+
+.accordion-details:hover .accordion-arrow {
+  border-color: var(--backgrond);
+  background: #a0a7ba;
+}
+
+.accordion-details:hover .accordion-arrow path {
+  stroke: #0a1d2a;
 }
 
 .services-accordeonV2-circle-white {

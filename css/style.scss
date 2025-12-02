@@ -1427,4 +1427,8 @@ body:has(.popup-form.show) {
     margin-left: auto;
     margin-right: auto;
   }
+  .form-row {
+    flex-direction: column;
+    gap: 50px;
+  }
 }

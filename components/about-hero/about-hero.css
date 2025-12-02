@@ -1,0 +1,133 @@
+.about-hero {
+  position: relative;
+  padding-top: 90px;
+}
+
+.about-hero-wrapper {
+  display: flex;
+  gap: 34px;
+  margin-bottom: 56px;
+}
+
+.about-hero-left {
+  width: 50%;
+}
+
+.about-hero-right {
+  width: 50%;
+}
+
+.about-hero-title {
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 125%;
+  letter-spacing: -0.02em;
+  color: var(--text);
+  margin-bottom: 56px;
+}
+
+.about-hero-title span {
+  color: var(--subtext);
+}
+
+.about-hero-left-text {
+  border-top: 1px solid var(--subtext);
+  padding-top: 12px;
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--subtext);
+}
+
+.about-hero-right-gif {
+  mix-blend-mode: lighten;
+  margin-top: -30%;
+}
+
+.about-hero-right-gif img {
+  margin-left: 20%;
+}
+
+.about-hero-right-text {
+  margin-top: -10%;
+  border-top: 1px solid var(--subtext);
+  padding-top: 12px;
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--subtext);
+}
+
+.about-hero-buttons {
+  display: flex;
+  gap: 24px;
+}
+
+.about-hero-circle-red {
+  position: absolute;
+  right: 0;
+  top: 30%;
+  width: 440px;
+  height: 440px;
+  border-radius: 100%;
+  background: var(--accent);
+  filter: blur(190px);
+  z-index: -2;
+}
+
+.about-hero-circle-white {
+  position: absolute;
+  left: -10;
+  bottom: -10%;
+  width: 400px;
+  height: 400px;
+  border-radius: 100%;
+  background: #a3a3a3;
+  filter: blur(190px);
+  z-index: -2;
+}
+
+@media (max-width: 992px) {
+  .about-hero-wrapper {
+    flex-direction: column;
+  }
+  .about-hero-left,
+  .about-hero-right {
+    width: auto;
+  }
+  .about-hero-right-gif {
+    margin-top: -10%;
+  }
+  .about-hero-right-gif img {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .about-hero-buttons {
+    flex-direction: column;
+  }
+  .about-hero {
+    padding-top: 35px;
+  }
+  .about-hero-title {
+    font-size: 38px;
+    color: #fff;
+    margin-bottom: 24px;
+    letter-spacing: normal;
+  }
+  .about-hero-title span {
+    color: #fff;
+  }
+  .about-hero-right-gif {
+    margin-top: -20%;
+  }
+  .about-hero-circle-white {
+    display: none;
+  }
+  .about-hero-wrapper {
+    margin-bottom: 48px;
+  }
+}/*# sourceMappingURL=about-hero.css.map */
