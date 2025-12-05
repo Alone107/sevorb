@@ -1,0 +1,81 @@
+.howTo-hero {
+  position: relative;
+  padding-top: 20px;
+  margin-bottom: 40px;
+}
+
+.howTo-hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -2;
+}
+
+.howTo-hero-bg img {
+  width: 100%;
+}
+
+.howTo-hero-circle-red {
+  position: absolute;
+  top: 50%;
+  right: -10%;
+  transform: translate(0%, -50%);
+  width: 440px;
+  height: 440px;
+  border-radius: 100%;
+  background: var(--accent);
+  filter: blur(190px);
+  z-index: -2;
+}
+
+.howTo-hero-info {
+  max-width: 62%;
+}
+
+.howTo-hero-wrapper {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.howTo-hero-title {
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 125%;
+  letter-spacing: -0.02em;
+  color: var(--text);
+  margin-bottom: 30px;
+}
+
+.howTo-hero-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--subtext);
+}
+
+.howTo-hero-gif {
+  mix-blend-mode: lighten;
+}
+
+@media (max-width: 767px) {
+  .howTo-hero {
+    margin-top: 35px;
+    padding-top: 0;
+    margin-bottom: 72px;
+  }
+  .howTo-hero-bg {
+    display: none;
+  }
+  .howTo-hero-wrapper {
+    flex-direction: column;
+  }
+  .howTo-hero-info {
+    max-width: none;
+  }
+  .howTo-hero-title {
+    font-size: 38px;
+    margin-bottom: 24px;
+  }
+}/*# sourceMappingURL=howTo-hero.css.map */

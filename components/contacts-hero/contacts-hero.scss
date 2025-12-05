@@ -1,0 +1,146 @@
+.contacts-hero {
+  position: relative;
+  padding-top: 72px;
+  margin-bottom: 64px;
+}
+
+.container-contacts-hero {
+  max-width: 1520px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.contacts-hero-wrapper {
+  display: flex;
+  gap: 24px;
+}
+
+.contacts-hero-title {
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 125%;
+  letter-spacing: -0.02em;
+  color: var(--text);
+  margin-bottom: 30px;
+}
+
+.contacts-hero-text {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 125%;
+  color: var(--subtext);
+  margin-bottom: 30px;
+}
+
+.contacts-hero-info {
+  max-width: 62%;
+}
+
+.contacts-hero-links {
+  display: flex;
+  align-items: center;
+  gap: 51px;
+}
+
+.contacts-hero-links a {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: var(--transition);
+}
+
+.contacts-hero-links a path {
+  transition-duration: var(--transition);
+}
+
+.contacts-hero-links a:hover path {
+  fill: var(--accent);
+}
+
+.contacts-hero-links a:hover {
+  transform: scale(1.1);
+}
+
+.contact-hero-gif {
+  margin-top: -4vw;
+  mix-blend-mode: lighten;
+  margin-right: -5vw;
+}
+
+.contacts-hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -3;
+}
+
+.contacts-hero-bg img {
+  width: 100%;
+}
+
+.contacts-hero-circle-red {
+  position: absolute;
+  top: 50%;
+  transform: translate(0%, -50%);
+  right: 0%;
+  width: 440px;
+  height: 440px;
+  border-radius: 100%;
+  background: var(--accent);
+  filter: blur(190px);
+  z-index: -2;
+}
+
+@media (max-width: 992px) {
+  .contacts-hero-wrapper {
+    align-items: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .contacts-hero {
+    padding-top: 35px;
+    margin-bottom: 72px;
+  }
+
+  .contacts-hero-title {
+    font-size: 38px;
+    margin-bottom: 24px;
+  }
+
+  .contacts-hero-wrapper {
+    flex-direction: column;
+    padding-bottom: 48px;
+  }
+  .contacts-hero-info {
+    max-width: none;
+  }
+  .contacts-hero-links {
+    gap: 75px;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    justify-content: center;
+    right: 0;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .contact-hero-gif {
+    margin-top: 0;
+    margin-right: 0;
+  }
+  .contacts-hero-circle-red {
+    top: 65%;
+    right: -50%;
+  }
+  .contacts-hero-bg {
+    display: none;
+  }
+}
