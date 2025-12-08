@@ -1,0 +1,43 @@
+.swiper.swiper-custom-sliderTextV1 {
+  overflow: visible;
+}
+
+.swiper-custom-sliderTextV1 .swiper-slide {
+  height: auto;
+}
+
+.custom-sliderTextV1-block {
+  height: 100%;
+  padding: 24px;
+  line-height: 150%;
+  color: var(--subtext);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  border: 1px solid var(--text);
+  border-radius: 24px;
+}
+
+.custom-sliderTextV1-block h3,
+.custom-sliderTextV1-block h4,
+.custom-sliderTextV1-block h5,
+.custom-sliderTextV1-block h6,
+.custom-sliderTextV1-block h2 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 125%;
+  color: #fff;
+}
+
+.custom-sliderTextV1-buttons {
+  margin-top: 24px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 18px;
+}
+
+@media (max-width: 767px) {
+  .custom-sliderTextV1-buttons {
+    margin-top: 36px;
+  }
+}

@@ -1,0 +1,27 @@
+.custom-textTitle {
+  margin-top: 72px;
+  margin-bottom: 48px;
+}
+
+.custom-textTitle-title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 125%;
+  letter-spacing: -0.02em;
+  color: #fff;
+  margin-bottom: 48px;
+}
+
+.custom-textTitle-text {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  line-height: 150%;
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  .custom-textTitle-title {
+    font-size: 24px;
+  }
+}/*# sourceMappingURL=custom-textTitle.css.map */
